@@ -1,0 +1,136 @@
+@import 'includes/_nav';
+
+$font-stack: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+
+$primary: #0e3c62;
+$secondary-1: #569ad1;
+$secondary-2: #a3bcdf;
+
+@mixin respond-to($media) {
+   @if $media == iphone{
+    @media only screen and (max-width: 760px) {
+       @content;
+    }
+  }
+  @else if $media == ipad {
+     @media only screen and (min-width: 760px) and (max-width: 1024px){
+      @content;
+    }
+  }
+}
+
+
+body {
+  font-family: $font-stack;
+}
+
+footer {
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+  font-weight: 400;
+}
+
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    border-color: #dddddd;
+}
+
+.img.ipad {
+  display: none;
+  @include respond-to(ipad) {
+    width: 100px;
+    height: 140px;
+    display: block;
+  }
+}
+
+.ui-listview>.ui-li-has-thumb>.ui-btn, .ui-listview>.ui-li-static.ui-li-has-thumb {
+  min-height: 1.25em;
+  padding-left: 1.25em;
+}
+
+@include respond-to(ipad) {
+  .ui-listview>.ui-li-has-thumb>.ui-btn, .ui-listview>.ui-li-static.ui-li-has-thumb {
+    min-height: 3.625em;
+    padding-left: 6.25em;
+  }
+}
+
+.best-stores li a {
+  &:hover {
+    background-color: $secondary-2;
+  }
+}
+
+.ui-btn.ui-checkbox-off:after {
+  background-color: white;
+}
+
+.ui-radio .ui-btn-icon-left:after {
+  background-color: transparent /*{global-icon-color}*/;
+  background-color: #ffffff /*{global-icon-disc}*/;
+}
+
+.ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
+  width: 33.333%;
+  @include respond-to(iphone) {
+    width: 100%;
+  }
+}
+
+.news-heading {
+  margin-bottom: 5px;
+}
+
+.news-block {
+  margin-bottom: 20px;
+}
+
+.img-book-store {
+    width: 100%;
+}
+
+.store-info {
+  padding-left: 2%;
+  @include respond-to(iphone) {
+    padding-left: none;
+  }
+}
+
+button.goback-btn.ui-btn {
+  margin: 24px;
+  left: -46px;
+}
+
+.ui-content {
+    margin-top: 80px;
+}
+
+// This breaks the grids in mobile view
+
+  @include respond-to(iphone) {
+    .ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+      width: 100% !important;
+      float: none;
+    }
+    .store-info {
+      padding-left: 0%;
+    }
+  }
+
+    @include respond-to(ipad) {
+    .ui-block-a, .ui-grid-b > .ui-block-b, .ui-grid-b > .ui-block-c {
+      width: 50%;
+    }
+    .ipad-paragraph {
+      margin: 0;
+    }
+  }

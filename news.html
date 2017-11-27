@@ -1,0 +1,390 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLURB</title>
+  <link rel="stylesheet" href="css/themes/Mobile-UX.min.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/student3.css">
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/tinysort.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <div data-role="page">
+    <header data-role="header" style="overflow:hidden;">
+      <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html" rel="external">BLURB</a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li><a href="index.html" rel="external">Home</a></li>
+              <li><a href="stores.html" rel="external">Stores</a></li>
+              <li class="active"><a href="news.html" rel="external">News</a></li>
+              <li><a href="events.html" rel="external">Events</a></li>
+              <li><a href="about.html" rel="external">About</a></li>
+              <li><a href="fav.html" rel="external">Favourites</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /header -->
+    </header>
+
+    <main role="main" class="ui-content">
+
+      <h1>News</h1>
+
+      <div class="ui-body ui-body-a ui-corner-all">
+        <h3>Filter</h3>
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <label for="grid-select-1" class="ui-hidden-accessible">Sort</label>
+            <select id="grid-select-1" class="sort-asc-desc" name="grid-select-1" data-shadow="false">
+							<option value="asc">Ascending (A-Z)</option>
+							<option value="desc">Descending (Z-A)</option>
+						</select>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-body ui-body-a ui-corner-all latest-news">
+        <ul data-role="listview" data-inset="true" data-filter="true">
+          <li>
+            <a href="#story-1">
+              <h2>Keeping Calm and Carrying on: WHSmith and Two World Wars</h2>
+              <p>Here at WHSmith, we’re proud of our long history of providing books, newspapers and stationery to the people
+                of Britain – and now, of course, to people all over the world. Since our first shop opened on Little Grosvenor
+                Street in 1792, we’ve been in operation across three centuries and two of the most pivotal moments of modern
+                history: World War I and World War II.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#story-2">
+              <h2>Exclusive Video! WHSmith Take Action to Reduce Mental Health Discrimination in the Workplace</h2>
+              <p>During February 2017, WHSmith CEO Stephen Clarke signed the Time to Change Pledge to reduce mental health discrimination.
+                And while we’re proud of the clear statement that this makes about our attitude as a company towards mental
+                well-being, the work doesn’t stop there. We’ve made a commitment to take action to tackle stigma and discrimination
+                around ill mental health in the workplace and our plan aims to have mental health on a par with physical
+                health.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#story-3">
+              <h2>With or Without EU? Essays from Goodbye Europe</h2>
+              <p>"What does the idea of Europe mean to the UK? How deep below the EU do our shared roots run? How much can politics
+                really touch, and how much can it never transform?"</p>
+            </a>
+          </li>
+          <li>
+            <a href="#story-4">
+              <h2>First Person: A Waterstones Exclusive Interview with Richard Flanagan</h2>
+              <p>The follow-up to his Man Booker Prize-Winning triumph, The Narrow Road to the Deep North, Richard Flanagan’s
+                latest novel, First Person, is a twisting thriller about a penniless writer, Kif Kehlman, offered a golden
+                ticket in the form of an opportunity to ghost-write the biography of a charismatic, notorious criminal, Siegfried
+                Heidl. </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+
+    <footer data-role="footer">
+      <p>BLURB &copy; book stores</p>
+      <p>115 New Cavendish Street <br> London W1W 6UW</p>
+    </footer>
+
+  </div>
+  <!-- End of news page -->
+
+  <div data-role="page" id="story-1" class="page">
+    <header data-role="header" style="overflow:hidden;">
+      <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html" rel="external">BLURB</a>
+          </div>
+          <nav>
+            <div class="nav-mobile">
+              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+            </div>
+            <ul class="nav-list">
+              <li><a href="index.html" rel="external">Home</a></li>
+              <li><a href="stores.html" rel="external">Stores</a></li>
+              <li class="active"><a href="news.html" rel="external">News</a></li>
+              <li><a href="events.html" rel="external">Events</a></li>
+              <li><a href="about.html" rel="external">About</a></li>
+              <li><a href="fav.html" rel="external">Favourites</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /header -->
+    </header>
+
+    <main role="main" class="ui-content">
+
+      <div class="ui-grid-a news-block">
+        <div class="ui-block-a">
+          <h1 class="news-heading">Keeping Calm and Carrying on: WHSmith and Two World Wars</h1>
+          <span class="news-date">October 8, 2017</span>
+        </div>
+        <div class="ui-block-b">
+          <button class="ui-btn add-fav-btn">Add to favourites</button>
+          <button class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</button>
+        </div>
+      </div>
+      <!-- /grid-a -->
+      <div>
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <img class="img-book-store" src="img/news/october-18.jpg">
+          </div>
+          <div class="ui-block-b store-info">
+            <p class="ipad-paragraph">Here at WHSmith, we’re proud of our long history of providing books, newspapers and stationery to the people
+              of Britain – and now, of course, to people all over the world. Since our first shop opened on Little Grosvenor
+              Street in 1792, we’ve been in operation across three centuries and two of the most pivotal moments of modern
+              history: World War I and World War II.</p>
+          </div>
+        </div>
+
+        <p> ---- Gamification </p>
+        <p> ---- Tags of things available at the store </p>
+        <p> ---- map</p>
+        <!-- /grid-b -->
+      </div>
+
+    </main>
+
+    <footer data-role="footer">
+      <p>BLURB &copy; book stores</p>
+      <p>115 New Cavendish Street <br> London W1W 6UW</p>
+    </footer>
+  </div>
+  <!-- end of page -->
+
+  <div data-role="page" id="story-2" class="page">
+    <header data-role="header" style="overflow:hidden;">
+      <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html" rel="external">BLURB</a>
+          </div>
+          <nav>
+            <div class="nav-mobile">
+              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+            </div>
+            <ul class="nav-list">
+              <li><a href="index.html" rel="external">Home</a></li>
+              <li><a href="stores.html" rel="external">Stores</a></li>
+              <li class="active"><a href="news.html" rel="external">News</a></li>
+              <li><a href="events.html" rel="external">Events</a></li>
+              <li><a href="about.html" rel="external">About</a></li>
+              <li><a href="fav.html" rel="external">Favourites</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /header -->
+    </header>
+
+    <main role="main" class="ui-content">
+
+      <div class="ui-grid-a news-block">
+        <div class="ui-block-a">
+          <h1 class="news-heading">Boston Conference Planning</h1>
+          <span>October 20, 2017</span>
+        </div>
+        <div class="ui-block-b">
+          <button class="ui-btn add-fav-btn">Add to favourites</button>
+          <button class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</button>
+        </div>
+      </div>
+      <!-- /grid-a -->
+      <div>
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <iframe class="video" width="100%" src="https://www.youtube.com/embed/Yq8grmWh3H0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="ui-block-b store-info">
+            <p class="ipad-paragraph">During February 2017, WHSmith CEO Stephen Clarke signed the Time to Change Pledge to reduce mental health discrimination.
+              And while we’re proud of the clear statement that this makes about our attitude as a company towards mental
+              well-being, the work doesn’t stop there. We’ve made a commitment to take action to tackle stigma and discrimination
+              around ill mental health in the workplace and our plan aims to have mental health on a par with physical health.
+            </p>
+          </div>
+        </div>
+        <p>WHSmith CEO, Stephen Clarke commented: “We are all very aware of how we can protect our physical health; but most
+          of us aren’t so knowledgeable about how to look after our mental health. The workplace can be a vital drive for
+          change in addressing this issue, which is why we are proud to be making this commitment.”
+          <br><br>We caught up with several key figures who have led the way in putting WHSmith’s action plan in place. Watch
+          the full video below to find out why reducing stigma and providing support for mental well-being is so important
+          in the workplace, and what WHSmith are doing to reduce mental health discrimination.</p>
+        <p> ---- Gamification </p>
+        <p> ---- Tags of things available at the store </p>
+        <p> ---- map </p>
+        <!-- /grid-b -->
+      </div>
+    </main>
+
+    <footer data-role="footer">
+      <p>BLURB &copy; book stores</p>
+      <p>115 New Cavendish Street <br> London W1W 6UW</p>
+    </footer>
+  </div>
+  <!-- end of page -->
+
+  <div data-role="page" id="story-3" class="page">
+    <header data-role="header" style="overflow:hidden;">
+      <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html" rel="external">BLURB</a>
+          </div>
+          <nav>
+            <div class="nav-mobile">
+              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+            </div>
+            <ul class="nav-list">
+              <li><a href="index.html" rel="external">Home</a></li>
+              <li><a href="stores.html" rel="external">Stores</a></li>
+              <li class="active"><a href="news.html" rel="external">News</a></li>
+              <li><a href="events.html" rel="external">Events</a></li>
+              <li><a href="about.html" rel="external">About</a></li>
+              <li><a href="fav.html" rel="external">Favourites</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /header -->
+    </header>
+
+    <main role="main" class="ui-content">
+
+      <div class="ui-grid-a news-block">
+        <div class="ui-block-a">
+          <h1 class="news-heading">With or Without EU? Essays from Goodbye Europe</h1>
+          <span>November 20, 2017</span>
+        </div>
+        <div class="ui-block-b">
+          <button class="ui-btn add-fav-btn">Add to favourites</button>
+          <button class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</button>
+        </div>
+      </div>
+      <!-- /grid-a -->
+      <div>
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <img class="img-book-store" src="img/news/november-20.jpeg">
+          </div>
+          <div class="ui-block-b store-info">
+            <p class="ipad-paragraph">"What does the idea of Europe mean to the UK? How deep below the EU do our shared roots run? How much can politics
+              really touch, and how much can it never transform?"</p>
+          </div>
+        </div>
+        <p>A unique collection, containing voices from both sides of the Brexit debate, Goodbye Europe delivers a panopticon
+          of cultural responses, exploring what Europe means to our heitage, history and future, as Britain prepares to leave
+          the European Union. Here, the Waterstones celebrated authors Henry Marsh and Sarah Perry present their essays from
+          Goodbye Europe, accompanied by an exclusive introduction from the collection's editor Emad Akhtar.</p>
+
+        <p> ---- Gamification </p>
+        <p> ---- Tags of things available at the store </p>
+        <p> ---- map</p>
+        <!-- /grid-b -->
+      </div>
+
+    </main>
+
+    <footer data-role="footer">
+      <p>BLURB &copy; book stores</p>
+      <p>115 New Cavendish Street <br> London W1W 6UW</p>
+    </footer>
+  </div>
+  <!-- end of page -->
+
+
+  <div data-role="page" id="story-4" class="page">
+    <header data-role="header" style="overflow:hidden;">
+      <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html" rel="external">BLURB</a>
+          </div>
+          <nav>
+            <div class="nav-mobile">
+              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+            </div>
+            <ul class="nav-list">
+              <li><a href="index.html" rel="external">Home</a></li>
+              <li><a href="stores.html" rel="external">Stores</a></li>
+              <li class="active"><a href="news.html" rel="external">News</a></li>
+              <li><a href="events.html" rel="external">Events</a></li>
+              <li><a href="about.html" rel="external">About</a></li>
+              <li><a href="fav.html" rel="external">Favourites</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /header -->
+    </header>
+
+    <main role="main" class="ui-content">
+
+      <div class="ui-grid-a news-block">
+        <div class="ui-block-a">
+          <h1 class="news-heading">First Person: A Waterstones Exclusive Interview with Richard Flanagan</h1>
+          <span>November 17, 2017</span>
+        </div>
+        <div class="ui-block-b">
+          <button class="ui-btn add-fav-btn">Add to favourites</button>
+          <button class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</button>
+        </div>
+      </div>
+      <!-- /grid-a -->
+      <div>
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <img class="img-book-store" src="img/news/november-17.jpeg">
+          </div>
+          <div class="ui-block-b store-info">
+            <p class="ipad-paragraph">The follow-up to his Man Booker Prize-Winning triumph, The Narrow Road to the Deep North, Richard Flanagan’s
+              latest novel, First Person, is a twisting thriller about a penniless writer, Kif Kehlman, offered a golden
+              ticket in the form of an opportunity to ghost-write the biography of a charismatic, notorious criminal, Siegfried
+              Heidl. </p>
+          </div>
+        </div>
+        <p>A novel that questions the nature and value of truth, First Person is a story about the very act of storytelling;
+          a story for our times that examines the fundamental value of fiction to how we shape and live our lives. In an
+          exclusive interview for Waterstones, Richard Flanagan discusses truth in a social media age and why he believes
+          fiction matters, now more than ever.</p>
+        <p> ---- Gamification </p>
+        <p> ---- Tags of things available at the store </p>
+        <p> ---- map</p>
+        <!-- /grid-b -->
+      </div>
+
+    </main>
+
+    <footer data-role="footer">
+      <p>BLURB &copy; book stores</p>
+      <p>115 New Cavendish Street <br> London W1W 6UW</p>
+    </footer>
+  </div>
+  <!-- end of page -->
+
+  <script src="js/news.js"></script>
+
+</body>
+
+</html>

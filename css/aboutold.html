@@ -1,0 +1,384 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BLURB</title>
+	<link rel="stylesheet" href="css/themes/Mobile-UX.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/student3.css"> 
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/filter.js"></script>
+</head>
+
+<body>
+
+	<div id = "aboutus" data-role="page">
+		<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li><a href="events.html" rel="external">Events</a></li>
+							<li class="active"><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+		<main role="main" class="ui-content">
+			<p></p>
+			<h3 style="text-decoration-color: black";>Team Members</h3>
+			
+			<div class="ui-body ui-body-a ui-corner-all">
+			<form>
+    <div class="ui-field-contain">
+			<select id="filtertext" data-native-menu="false" class="filterable-select" >
+            <option>All Courses</option>
+            <option value="multimedia" data-filtertext="Florida">Multimedia Computing</option>
+            <option value="computer">Computer Science</option>
+        </select>
+		<!--<select id="filtertext1" data-native-menu="false" class="filterable-select">
+            <option>Sort by</option>
+            <option value="alpha" data-filtertext="Florida">Alphabetically (A-Z)</option>
+            <option value="alphab">Alphabetically (Z-A)</option>
+        </select> -->
+		 <input type="button" id="test" value="Sort by student number(Asc/Des)"/>
+				</div></form>
+			</div>
+			 <div role="main" class="ui-content">
+				 <div class="ui-body ui-body-a ui-corner-all best-stores">
+         		 <ul id="list" data-role="listview" data-inset="true">
+					<li><a href="#student1"> <img class="card-img-top" src="img/s1.png"> 1. Calvin, 21<br><br>Level 6, Multimedia Computing Student</a></li>
+					<li><a href="#student2"> <img class="card-img-top" src="img/s2.png"> 2. Sam, 21<br><br>Level 6, Multimedia Computing Student</a></li>
+					<li><a href="#student3">  <img class="card-img-top" src="img/s3.png"> 3. Haresh, 22<br><br>Level 6, Multimedia Computing Student</a></li>
+					<li><a href="#student4">  <img class="card-img-top" src="img/s4.png"> 4. Madalina, 22<br><br>Level 6, Multimedia Computing Student</a></li>
+				 </ul></div>
+	   
+    </div> 
+			
+			
+			
+			<h3 id="about-us-header" >About Us</h3>
+			<p style="text-align: justify;">We are a group of 4 students from University of Westminster, trying to develop a mobile web application to promote products included in the book retailer’s portfolio in close proximity to them, events, talks, reading sessions, interest groups meetings, children parties etc. This is a group project representing the coursework for "Mobile User Experience" module.</p>
+		
+				<h3>Our Mission</h3>
+					<p style="text-align: justify;"> Our aim is to familiarise customers with the products the book retailers offers in stores near to them, encourage customers to visit the stores and share their experiences with others. </p>		
+					
+				<h3>Why Us?</h3>
+				<div id="cultivated-wit-copy" class="grid6">
+					<p style="text-align: justify;">We encourage a loyalty initiative that encourages customers to advocate and engage more with the products included in the book retailers portfolio on a repeat basis.</p>				
+					</div>
+			
+
+			
+			
+			<footer data-role="footer" >
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>
+</div>
+		
+		
+		<div id="student1" data-role="page">
+				<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li><a href="events.html" rel="external">Events</a></li>
+							<li class="active"><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+						<h1 style="color: #0e3c62">Calvin Keesoony</h1>
+						
+						<div class="ui-grid-a">
+							<div class="ui-block-a">
+								 <img class="card-img-top" src="img/s1.png" alt="Card image cap">
+							</div>
+    						<div class="ui-block-b">
+    							
+    							<h5 id="question" style="font-size: 12px">What's your favourite aspect about studying Multimedia Computing?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+						<h5 id="question" style="font-size: 12px">Have you always wanted to be a web designer / developer?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+						<h5 id="question" style="font-size: 12px">Favourite color?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+				  <h5 id="question" style="font-size: 12px">What do you enjoy doing outside the university?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+				  <h5 id="question" style="font-size: 12px">What's your favourite food?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+    						</div>
+</div><!-- /grid-a -->
+						
+					<div style="margin-top: 50px; width: 300px; margin-left: 50px;" >
+              <img class="card-img-top" src="img/s1.png" alt="Card image cap">
+						
+			</div>
+			<div style="margin-top: -435px; margin-left: 400px; width: 600px;"  >
+				<div class="ui-body" style="margin-left: 10%;"> 
+				
+				
+				
+                <h5 id="question" style="font-size: 12px">What's your favourite aspect about studying Multimedia Computing?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+						<h5 id="question" style="font-size: 12px">Have you always wanted to be a web designer / developer?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+						<h5 id="question" style="font-size: 12px">Favourite color?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+				  <h5 id="question" style="font-size: 12px">What do you enjoy doing outside the university?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+				  <h5 id="question" style="font-size: 12px">What's your favourite food?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+					</div>
+			</div>
+			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p> 
+			<p></p>
+			<p></p>
+			<br><br><br><br>
+              <ul data-role="listview">
+                <li><a href="fav.html" >Add this page to your favourites</a></li>
+				  <br>
+				  <br>
+				  <li><h3>See my location on Google Maps</h3></li>
+                <li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+                <br>
+				  <br>
+				  <li><a href="#aboutus" data-transition="fade">Back to About us</a></li>
+            </ul>
+			
+					
+			<footer data-role="footer" >
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>	
+					</div>
+		
+		
+		<div id="student2" data-role="page">
+				<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li><a href="events.html" rel="external">Events</a></li>
+							<li class="active"><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+					<div style="align-content: center;">	
+					<div style="margin-top: 50px; width: 300px; margin-left: 25px; margin-right:25px; " >
+              <img class="card-img-top" src="img/s2.png" alt="Card image cap">
+						
+			</div>
+			<div style="margin-top: -435px; margin-left: 375px; margin-right: 50px; width: 600px;"  >
+				<div class="ui-body ui-body-a ui-corner-all"> 
+				<h1 style="color: #0e3c62">Sam Collins</h1>
+				
+                <h5 id="question" style="font-size: 12px">What's your favourite aspect about studying Multimedia Computing?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+						<h5 id="question" style="font-size: 12px">Have you always wanted to be a web designer / developer?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+						<h5 id="question" style="font-size: 12px">Favourite color?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+				  <h5 id="question" style="font-size: 12px">What do you enjoy doing outside the university?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+				  <h5 id="question" style="font-size: 12px">What's your favourite food?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+					</div>
+			</div>
+			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p> 
+			</div>
+			<p></p>
+			<p></p>
+			<br><br><br><br>
+              <ul data-role="listview">
+                <li><a href="#page2" data-transition="fade">Add this page to your favourites</a></li>
+				  <br>
+				  <br>
+				  <li><h3>See my location on Google Maps</h3></li>
+                <li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+                <br>
+				  <br>
+				  <li><a href="#aboutus" data-transition="fade">Back to About us</a></li>
+            </ul>
+			
+					
+			<footer data-role="footer" >
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>	
+					</div>
+		
+		<div id="student3" data-role="page">
+			<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li><a href="events.html" rel="external">Events</a></li>
+							<li class="active"><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+					<div style="align-content: center;">	
+					<div style="margin-top: 50px; width: 300px; margin-left: 25px; margin-right:25px; " >
+              <img class="card-img-top" src="img/s3.png" alt="Card image cap">
+						
+			</div>
+			<div style="margin-top: -435px; margin-left: 375px; margin-right: 50px; width: 600px;"  >
+				<div class="ui-body ui-body-a ui-corner-all"> 
+				<h1 style="color: #0e3c62">Haresh Vekriya</h1>
+				
+                   <h5 id="question" style="font-size: 12px">What's your favourite aspect about studying Multimedia Computing?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+						<h5 id="question" style="font-size: 12px">Why do you think employers should choose to hire you after the graduation?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+						<h5 id="question" style="font-size: 12px">What's your favourite drink?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+				  <h5 id="question" style="font-size: 12px">What do you enjoy doing outside the university?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+				  <h5 id="question" style="font-size: 12px">what is your dream holiday destination and why?</h5>
+			<p style="font-size: 10px">Please answer the questions, or find another ones if you don't like them.</p>
+					</div>
+			</div>
+			
+			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p> 
+			
+			</div>
+			<p></p>
+			<p></p>
+			<br><br><br><br>
+              <ul data-role="listview">
+                <li><a href="fav.html" data-transition="fade">Add this page to your favourites</a></li>
+				  <br>
+				  <br>
+				  <li><h3>See my location on Google Maps</h3></li>
+                <li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+                <br>
+				  <br>
+				  <li><a href="#aboutus" data-transition="fade">Back to About us</a></li>
+            </ul>
+			
+					
+			<footer data-role="footer" >
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>	
+					</div>
+		<div id="student4" data-role="page">
+			<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li><a href="events.html" rel="external">Events</a></li>
+							<li class="active"><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+					<div style="align-content: center;">	
+					<div style="margin-top: 50px; width: 300px; margin-left: 25px; margin-right:25px; " >
+              <img class="card-img-top" src="img/s4.png" alt="Card image cap">
+						
+			</div>
+			<div style="margin-top: -435px; margin-left: 375px; margin-right: 50px; width: 600px;"  >
+				<div class="ui-body ui-body-a ui-corner-all"> 
+				<h1 style="color: #0e3c62">Madalina Voiniciuc</h1>
+				
+                    <h5 id="question" style="font-size: 12px">What's your favourite aspect about studying abroad?</h5>
+			<p style="font-size: 10px">Meeting new people, making friends and enjoying experiences I’d never had before. At the moment this country offered me more opportunities than my country could, so aspects like picking up the international skills to gain a decent graduate job, gaining independence, learning self-reliance or brushing up on my language skills would tip the balance in favour of living abroad for a few years even if it could become the toughest experience at some stage.</p>
+						<h5 id="question" style="font-size: 12px">Have you always wanted to be a web designer?</h5>
+			<p style="font-size: 10px">No. It was good fortune to be here at the registration time and get accepted. Cabin crew was my dream job. </p>
+						<h5 id="question" style="font-size: 12px">Where do you see yourself in 5 years time?</h5>
+			<p style="font-size: 10px">In Romania. Working for a british company:)). </p>
+				  <h5 id="question" style="font-size: 12px">What do you enjoy doing outside the university?</h5>
+			<p style="font-size: 10px">I enjoy taking pictures, reading and walking, but it's a busy period for me and I prefer working on my portofolio when I have some spare time.</p>
+				  <h5 id="question" style="font-size: 12px">What's your favourite movie?</h5>
+			<p style="font-size: 10px">Law abiding citizen. The stoning of Soraya M. Mostly dramas and psychological movies. </p>
+					</div>
+			</div>
+				<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p> 
+
+			
+			</div>
+			<p></p>
+			<p></p>
+			<br><br><br><br>
+              <ul data-role="listview">
+                <li><a href="fav.html" data-transition="fade">Add this page to your favourites</a></li>
+				  <br>
+				  <br>
+				  <li><h3>See my location on Google Maps</h3></li>
+                <li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+                <br>
+				  <br>
+				  <li><a href="#aboutus" data-transition="fade">Back to About us</a></li>
+            </ul>
+			
+			<footer data-role="footer" >
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>	
+					</div>
+	</div>
+	</body>
+</html>

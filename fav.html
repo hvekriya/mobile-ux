@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLURB</title>
+  <link rel="stylesheet" href="css/themes/Mobile-UX.min.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/student3.css">
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <div data-role="page">
+    <header data-role="header" style="overflow:hidden;">
+      <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html" rel="external">BLURB</a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li><a href="index.html" rel="external">Home</a></li>
+              <li><a href="stores.html" rel="external">Stores</a></li>
+              <li><a href="news.html" rel="external">News</a></li>
+              <li><a href="events.html" rel="external">Events</a></li>
+              <li><a href="about.html" rel="external">About</a></li>
+              <li class="active"><a href="fav.html" rel="external">Favourites</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /header -->
+    </header>
+
+    <main role="main" class="ui-content">
+
+      <h1>Favourites</h1>
+
+      <div class="ui-body ui-body-a ui-corner-all fav">
+        <p style="display:none;">No favourites added.</p>
+        <ul data-role="listview" data-inset="true" data-filter="true">
+          <div class="fav-news-list">
+            <h3>News</h3>
+          </div>
+          <div class="fav-students-list">
+            <h3>Students</h3>
+          </div>
+          <div class="fav-events-list">
+            <h3>Events</h3>
+          </div>
+          <div class="fav-stores-list">
+            <h3>Stores</h3>
+          </div>
+        </ul>
+      </div>
+
+      <div class="ui-body ui-body-a ui-corner-all">
+        <h3>Email favourites list</h3>
+        <form action="POST">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" value="">
+        </form>
+        <button class="ui-btn sendEmail">Send now</button>
+      </div>
+
+    </main>
+
+    <footer data-role="footer">
+      <p>BLURB &copy; book stores</p>
+      <p>115 New Cavendish Street <br> London W1W 6UW</p>
+    </footer>
+
+  </div>
+
+  <script src="js/fav.js"></script>
+
+</body>
+
+</html>
