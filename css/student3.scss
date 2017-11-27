@@ -114,6 +114,11 @@ button.goback-btn.ui-btn {
     margin-top: 80px;
 }
 
+.map {
+  height: 400px;
+  width: 100%;
+}
+
 // This breaks the grids in mobile view
 
   @include respond-to(iphone) {

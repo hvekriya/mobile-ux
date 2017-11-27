@@ -11,7 +11,6 @@
 
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap"></script>
   <script src="js/tinysort.min.js"></script>
   <script src="js/main.js"></script>
 </head>
@@ -23,7 +22,10 @@
       <section class="navigation">
         <div class="nav-container">
           <div class="brand">
-            <a href="index.html" rel="external">BLURB</a>
+            <a href="index.html" rel="external">
+              <img src="img/mainlogo.png" alt="logo"
+            width="83" height="38" border="0">
+          </a>
           </div>
           <nav>
             <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -159,23 +161,9 @@
               history: World War I and World War II.</p>
           </div>
         </div>
-
         <p> ---- Gamification </p>
         <p> ---- Tags of things available at the store </p>
-        <div id="map"></div>
-        <script>
-          function initMap() {
-            var uluru = { lat: 51.520587, lng: -0.141079 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 16,
-              center: uluru
-            });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
-          }
-        </script>
+        <div id="map-news-1" class="map"></div>
       </div>
 
     </main>
@@ -246,7 +234,7 @@
           in the workplace, and what WHSmith are doing to reduce mental health discrimination.</p>
         <p> ---- Gamification </p>
         <p> ---- Tags of things available at the store </p>
-        <p> ---- map </p>
+        <div id="map-news-2" class="map"></div>
         <!-- /grid-b -->
       </div>
     </main>
@@ -313,7 +301,7 @@
 
         <p> ---- Gamification </p>
         <p> ---- Tags of things available at the store </p>
-        <p> ---- map</p>
+        <div id="map-news-3" class="map"></div>
         <!-- /grid-b -->
       </div>
 
@@ -383,7 +371,7 @@
           fiction matters, now more than ever.</p>
         <p> ---- Gamification </p>
         <p> ---- Tags of things available at the store </p>
-        <p> ---- map</p>
+        <div id="map-news-4" class="map"></div>
         <!-- /grid-b -->
       </div>
 
@@ -395,9 +383,8 @@
     </footer>
   </div>
   <!-- end of page -->
-
   <script src="js/news.js"></script>
-
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaOifI9_72medKQg3PYGBscxPIzeEK_K4&callback=initMap"></script>
 </body>
 
 </html>

@@ -1,10 +1,10 @@
 // This code goes on every page that has add to fav feature 
 checkForFavourites()
 
-$(window).on('hashchange', function(e){
-    checkForFavourites() // this becuase when you go back and click on news item again the page isnt loaded so the function thats called above 
-  // does not get called. 
-});
+$(window).on('hashchange', function (e) {
+  checkForFavourites() // this becuase when you go back and click on news item again the page isnt loaded so the function thats called above 
+// does not get called. 
+})
 
 var news = 0
 
@@ -45,18 +45,58 @@ function checkForFavourites () {
 // The syntax for removing the localStorage item is as follows:
 // localStorage.removeItem("myCat")
 
-
-
 // sort functions
 
-tinysort('.latest-news ul>li',{order:'asc'});
-
+tinysort('.latest-news ul>li', {order: 'asc'})
 
 $('.sort-asc-desc').change(function () {
   $('.latest-news ul').removeClass('ui-corner-all')
   if ($(this).val() == 'asc') {
-      tinysort('.latest-news ul>li',{order:'asc'});
+    tinysort('.latest-news ul>li', {order: 'asc'})
   } else if ($(this).val() == 'desc') {
-      tinysort('.latest-news ul>li',{order:'desc'});
+    tinysort('.latest-news ul>li', {order: 'desc'})
   }
 })
+
+// map stuff
+function initMap () {
+  var news1 = { lat: 51.520587, lng: -0.141079 }
+  var map = new google.maps.Map(document.getElementById('map-news-1'), {
+    zoom: 16,
+    center: news1
+  })
+  var marker = new google.maps.Marker({
+    position: news1,
+    map: map
+  })
+
+  var news2 = { lat: 51.520587, lng: -0.141079 }
+  var map = new google.maps.Map(document.getElementById('map-news-2'), {
+    zoom: 16,
+    center: news2
+  })
+  var marker = new google.maps.Marker({
+    position: news2,
+    map: map
+  })
+
+  var news3 = { lat: 51.520587, lng: -0.141079 }
+  var map = new google.maps.Map(document.getElementById('map-news-3'), {
+    zoom: 16,
+    center: news3
+  })
+  var marker = new google.maps.Marker({
+    position: news3,
+    map: map
+  })
+  
+  var news4 = { lat: 51.520587, lng: -0.141079 }
+  var map = new google.maps.Map(document.getElementById('map-news-4'), {
+    zoom: 16,
+    center: news4
+  })
+  var marker = new google.maps.Marker({
+    position: news4,
+    map: map
+  })
+}
