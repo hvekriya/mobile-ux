@@ -1,0 +1,486 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BLURB</title>
+	<link rel="stylesheet" href="css/themes/Mobile-UX.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/student3.css">
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/tinysort.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page">
+		<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li class="active"><a href="events.html" rel="external">Events</a></li>
+							<li><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+
+		<main role="main" class="ui-content">
+			<h1>Events</h1>
+
+			<div class="ui-body ui-body-a ui-corner-all">
+				<h3>Filter/Sort Upcoming Events</h3>
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<label for="grid-select-1" class="ui-hidden-accessible">Locations</label>
+						<select id="grid-select-1" class="location-filter" name="grid-select-1" data-shadow="false">
+            	<option value="">All location</option>
+							<option value="London">London</option>
+							<option value="Oxford">Oxford</option>
+						</select>
+					</div>
+
+					<div class="ui-block-b">
+						<label for="grid-select-1" class="ui-hidden-accessible">Sort</label>
+						<select id="grid-select-1" class="sort-asc-desc" name="grid-select-1" data-shadow="false">
+							<option value="asc">Ascending (A-Z)</option>
+							<option value="desc">Descending (Z-A)</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="ui-body ui-body-a ui-corner-all stores">
+				<ul data-role="listview" data-inset="true" data-filter="true" class="stores-list">
+					<li>
+						<a href="#events-1" rel="external"> 
+							<img class="img ipad" src="img/riba.png">  
+							<h2>Oxford University Bookshop 40% off Sale</h2>
+							<p class="location">Oxford</p>
+						</a>
+					</li>
+					<li>
+						<a href="#events-2"> 
+							<img class="img ipad" src="img/martin.png">  
+							<h2>George RR Martin Book Signing</h2>
+							<p class="location">London</p>
+						</a>
+					</li>
+					<li>
+						<a href="#events-3"> 
+							<img class="img ipad" src="img/JK.png">  
+							<h2>JK Rowling Book Signing</h2>
+							<p class="location">London</p>
+						</a>
+					</li>
+					<li>
+						<a href="#events-4"> 
+							<img class="img ipad" src="img/fairy.png">  
+							<h2>Fairies - Human Relations in British Lore Lecture</h2>
+							<p class="location">London</p>
+						</a>
+					</li>
+					<li>
+						<a href="#events-5"> 
+							<img class="img ipad" src="img/marr.png">  
+							<h2>Andrew Marr - A Short Book about Painting Lecture</h2>
+							<p class="location">London</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</main>
+
+		<footer data-role="footer">
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>
+
+	</div>
+
+	<!-- Event 1 page -->
+
+	<div data-role="page" id="events-1" class="page">
+		<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li class="active"><a href="events.html" rel="external">Events</a></li>
+							<li><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+
+		<main role="main" class="ui-content">
+
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<h1 class="store-name">Oxford University Bookshop 40% off Sale</h1>
+				</div>
+				<div class="ui-block-b">
+					<a class="ui-btn add-fav-btn">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
+					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+				</div>
+			</div>
+			<!-- /grid-a -->
+			<div>
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<img class="img-book-store" src="img/riba.png">
+					</div>
+					<div class="ui-block-b store-info">
+						<p>Description</p>
+					</div>
+					
+					 
+				</div>
+
+				<p> ---- Gamification </p>
+				<br>
+				<ul data-role="listview">
+				<li><h3>See the location of the event</h3></li>
+				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				<br>
+                <br>
+				</ul>
+				<!-- /grid-b -->
+			</div>
+			
+		</main>
+
+		<footer data-role="footer">
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>
+
+	</div>			
+			<!-- Event 2 page -->
+
+	<div data-role="page" id="events-2" class="page">
+		<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li class="active"><a href="events.html" rel="external">Events</a></li>
+							<li><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+
+		<main role="main" class="ui-content">
+
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<h1 class="store-name">George RR Martin Book Signing</h1>
+				</div>
+				<div class="ui-block-b">
+					<a class="ui-btn add-fav-btn">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
+					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+				</div>
+			</div>
+			<!-- /grid-a -->
+			<div>
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<img class="img-book-store" src="img/martin.png">
+					</div>
+					<div class="ui-block-b store-info">
+						<p>Game of Thrones' writer George RR Martin, in preparation for the release of the seventh book in the famed series, The Winds of Winter - is doing a book signing in celebration for its ever nearing release! Come on down to to our bookstore in Fitrovia for a chance to meet the man himself! The event will take place on the 4th January 2018.
+						<br>
+						<br>
+						Tickets will be priced at £10. Further details to be released at a later date. </p>
+					</div>
+					
+					
+				</div>
+
+				<p> ---- Gamification </p>
+				<br>
+				<ul data-role="listview">
+				<li><h3>See the location of the event</h3></li>
+				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6731452684926!2d-0.13854078386036692!3d51.51921227963713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2be96f2f0f%3A0xbf583b2ba49e475e!2sOxfam+Shop!5e0!3m2!1sen!2suk!4v1511355381336" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				<br>
+                <br>
+            </ul>
+				<!-- /grid-b -->
+			</div>
+
+		</main>
+
+		<footer data-role="footer">
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>
+
+	</div>
+	
+	<!-- Event 3 page -->
+
+	<div data-role="page" id="events-3" class="page">
+		<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li class="active"><a href="events.html" rel="external">Events</a></li>
+							<li><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+
+		<main role="main" class="ui-content">
+
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<h1 class="store-name">JK Rowling Book Signing</h1>
+				</div>
+				<div class="ui-block-b">
+					<a class="ui-btn add-fav-btn">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
+					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+				</div>
+			</div>
+			<!-- /grid-a -->
+			<div>
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<img class="img-book-store" src="img/JK.png">
+					</div>
+					<div class="ui-block-b store-info">
+						<p>Famed for writing one of the most influential children's books series of the 20th and 21st centuries, Harry Potter - JK Rowling will be doing an exclusive book signing surrounding all things magical! As well this one off book signing event, JK will be doing a short 30min talk about her rise to fame with the help of Harry and his friends, as well as how the sucess of Harry Potter has changed her life. This one of a kind event shall be taking place on the 21st December 2017.
+						<br>
+						<br>
+						Tickets will be £15. Entrace time will be 7-7:30pm</p>
+					</div>
+					
+					
+				</div>
+
+				<p> ---- Gamification </p>
+				<br>
+				<ul data-role="listview">
+				<li><h3>See the location of the event</h3></li>
+				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.222801854389!2d-0.1382313196617218!3d51.50912831849736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876052172a28649%3A0xd391a6e0b4c7d79f!2sWaterstones+London+-+Piccadilly!5e0!3m2!1sen!2suk!4v1511355489930" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				<br>
+                <br>
+            </ul>
+				<!-- /grid-b -->
+			</div>
+			
+					</main>
+
+		<footer data-role="footer">
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>
+
+	</div>
+			
+			<!-- Event 4 page -->
+
+	<div data-role="page" id="events-4" class="page">
+		<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li class="active"><a href="events.html" rel="external">Events</a></li>
+							<li><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+
+		<main role="main" class="ui-content">
+
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<h1 class="store-name">Fairies - Human Relations in British Lore</h1>
+				</div>
+				<div class="ui-block-b">
+					<a class="ui-btn add-fav-btn">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
+					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+				</div>
+			</div>
+			<!-- /grid-a -->
+			<div>
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<img class="img-book-store" src="img/fairy.png">
+					</div>
+					<div class="ui-block-b store-info">
+						<p>The British lore of fairies has long fascinated folklorists, but tonight’s speaker is a researcher who has examined fairies in terms of theme, with some surprising results. Tonight he talks to us about how, according to folklore, humans and fairies engage with one another, and how those relationships are negotiated by the rules of gift, taboo and seduction.  Tonight’s speaker looks at the nuts and bolts of how to deal with them  – and how they deal with us — by looking at offerings, theft (including of babies), causing offence, romance and even love between humans and fairies. The customs and stories which are handed down in the oral tradition tell of a complex and sometimes contradictory relationship between the human and otherworldly beings.   Join us for an evening of informative engagement, and not a little fun.</p>
+						<p>Monday 14th December 2017</p>
+						<p>Time: Please arrive 7.15 pm for a 7.30 pm start. No latecomers once lecture has started.
+
+						Price: £8  Ring, or book online here – tickets below</p>
+					</div>
+					
+					
+				</div>
+
+				<p> ---- Gamification </p>
+				<br>
+				<ul data-role="listview">
+				<li><h3>See the location of the event</h3></li>
+				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.634788491823!2d-0.13338461966146958!3d51.519915917708566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ca55a9bef7%3A0x38d16ad0b0f76071!2sTreadwell&#39;s+Books!5e0!3m2!1sen!2suk!4v1511355685026" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				<br>
+                <br>
+            </ul>
+				<!-- /grid-b -->
+			</div>
+			
+					</main>
+
+		<footer data-role="footer">
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>
+
+	</div>
+			
+			<!-- Event 5 page -->
+
+	<div data-role="page" id="events-5" class="page">
+		<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">BLURB</a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li class="active"><a href="events.html" rel="external">Events</a></li>
+							<li><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+
+		<main role="main" class="ui-content">
+
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<h1 class="store-name">Andrew Marr - A Short Book about Painting Lecture</h1>
+				</div>
+				<div class="ui-block-b">
+					<a class="ui-btn add-fav-btn">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
+					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+				</div>
+			</div>
+			<!-- /grid-a -->
+			<div>
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<img class="img-book-store" src="img/marr.png">
+					</div>
+					<div class="ui-block-b store-info">
+						<p>In A Short Book About Painting, writer and broadcaster Andrew Marr tackles the subjects of inspiration, creativity, politics, beauty and form. Following a serious stroke in 2013 that left him partially paralysed, Marr struggled with the physical rigours of painting using oils. This led to his wrestling with some of the very fundamental questions about painting as an art form in itself and to interrogate himself daily about brushstrokes, colour balance, line and texture. Using his own work in progress as examples of failures, and examples of techniques from classical artists right up to the present day, Marr examines how the painter can improve and learn from his or her mistakes.</p>
+						<p>Thursday 20th December 2017</p>
+						<p>Event starts at 7:00pm .
+
+						Tickets are £10 and entitle the holder to a glass of wine and 20% off the speakers' books.
+						This event takes place at Daunt Books Marylebone, 83 Marylebone High Street, London W1U 4QW</p>
+					</div>
+					
+					
+				</div>
+
+				<p> ---- Gamification </p>
+				<br>
+				<ul data-role="listview">
+				<li><h3>See the location of the event</h3></li>
+				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.607859306708!2d-0.15417708409299377!3d51.520409917572614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad1f747024d%3A0xe690429c82b85882!2sDaunt+Books!5e0!3m2!1sen!2suk!4v1511788050004" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				<br>
+                <br>
+            </ul>
+				<!-- /grid-b -->
+			</div>
+			
+					</main>
+
+		<footer data-role="footer">
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>
+
+	</div>
+
+	<!-- custom scripts -->
+
+	<script src="js/main.js"></script>
+	<script src="js/events.js"></script>
+</body>
+
+</html>
