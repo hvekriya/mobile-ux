@@ -5,11 +5,11 @@
 	<title>BLURB</title>
 	<link rel="stylesheet" href="css/themes/Mobile-UX.min.css" />
 	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 	<link rel="stylesheet" href="css/student3.css">
 
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="js/tinysort.min.js"></script>
 </head>
 
@@ -45,35 +45,75 @@
 <input type="text" placeholder="Full Name"><br>
 <input type="text" placeholder="Address"><br>
 <input type="text" placeholder="Email"><br>
-<select name="People">
-<option value="Adult">Adult</option>
-<option value="Child">Child</option>
-<option value="OAP">OAP</option>
-</select>
 
-<select name="Quantity">
-<option value="Q">1</option>
-<option value="Q">2</option>
-<option value="Q">3</option>
-<option value="Q">4</option>
-<option value="Q">5</option>
-<option value="Q">6</option>
-<option value="Q">7</option>
-<option value="Q">8</option>
-<option value="Q">9</option>
-<option value="Q">10</option>
-</select>
+<!--- This is the payment caluclation --->
 
-<input type="submit" value="Proceed to Payment">
+<label for="quantityChildren">Children quantity</label>
+<input class="select-control" id="quantityChildren">
+
+<label for="quantityAdult">Adult quantity</label>
+<input class="select-control" id="quantityAdult">
+
+<label for="quantityOAP">OAP quantity</label>
+<input class="select-control" id="quantityOAP">
+
+<div style="display: none" class="summary">
+	<h3>Summary</h3>
+	<p>Children Total: £<span class="childrenTotal"></span></p>
+	<p>Adult Total: £<span class="adultTotal"></span></p>
+	<p>OAP Total: £<span class="oapTotal"></span></p>
+	<p>Total: £<span class="total"></span></p>
+</div>
+
+	<button type="submit">Proceed to payment now</button>
+	
+	
+    <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Proceed to payment</a>
+    <div data-role="popup" id="popupBasic">
+    <img src="img/tick.png" alt=icon height="20px" width="20px"><p>Successful!
+    <br>You successfully booked the event. 
+    <br>You will recieve an email in your inbox shortly with the reciept. Keep this safe as it will be required at the event.
+    </p>
+    </div>
+    
 </form>
 		
-
-
 		
 		<footer data-role="footer">
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
 </div>
+
+<script>
+
+    $(".select-control").change(function() {
+    var totalChildren = 0;
+	var priceChildren = 2.50;
+    var totalAdult = 0;
+	var priceAdult = 2.50;
+	var totalOAP = 0;
+	var priceOAP = 2.50;
+	var total = 0;
+	
+      $("#quantityChildren").each(function() {
+          totalChildren += parseInt(this.value)||0;
+		  $('.childrenTotal').html(totalChildren*priceChildren)
+      });
+      $("#quantityAdult").each(function() {
+          totalAdult += parseInt(this.value)||0;
+		  $('.adultTotal').html(totalAdult*priceAdult)
+      });
+      $("#quantityOAP").each(function() {
+          totalOAP += parseInt(this.value)||0;
+		  $('.oapTotal').html(totalOAP*priceOAP)
+      });
+	$('.total').html(totalChildren*priceChildren + totalAdult*priceAdult + totalOAP*priceOAP)
+	$('.summary').show()
+    });
+
+
+</script>
+
 </body>
 </html>
