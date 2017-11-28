@@ -20,6 +20,7 @@ $(function () { // DOM ready
   })
   // changes default filter text
   $('.ui-page-active .ui-input-search input').attr('placeholder', 'Search')
+
 }) // end DOM ready
 
 function goBack () {

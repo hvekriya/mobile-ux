@@ -280,5 +280,58 @@ button.goback-btn.ui-btn {
   /* line 138, student3.scss */
   .ipad-paragraph {
     margin: 0; } }
+/* line 143, student3.scss */
+.iframe-map {
+  width: 400;
+  height: 300; }
+  @media only screen and (max-width: 760px) {
+    /* line 143, student3.scss */
+    .iframe-map {
+      width: 350;
+      height: 200; } }
+
+/* line 153, student3.scss */
+.loyalty {
+  padding: 20px;
+  text-align: center;
+  background: white; }
+
+/* line 159, student3.scss */
+.loyalty-points {
+  margin: 0;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  overflow: hidden;
+  border: none;
+  font: normal 70px/1 "VT323", Helvetica, sans-serif;
+  color: #0e3c62;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 5px 5px 0 white; }
+
+/* line 175, student3.scss */
+.coupon {
+  border: 5px dotted #bbb;
+  width: 40%;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 400px; }
+
+/* line 183, student3.scss */
+.container-coupon {
+  padding: 2px 16px;
+  background-color: #f1f1f1; }
+
+/* line 188, student3.scss */
+.promo {
+  background: #ccc;
+  padding: 3px; }
+
+/* line 193, student3.scss */
+.expire {
+  color: red; }
 
 /*# sourceMappingURL=student3.css.map */

@@ -1,0 +1,125 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BLURB</title>
+	<link rel="stylesheet" href="css/themes/Mobile-UX.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link async href="http://fonts.googleapis.com/css?family=VT323" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"
+	/>
+	<link rel="stylesheet" href="css/student3.css">
+
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/tinysort.min.js"></script>
+</head>
+
+<body>
+
+	<div id="aboutus" data-role="page">
+		<header data-role="header" style="overflow:hidden;">
+			<section class="navigation">
+				<div class="nav-container">
+					<div class="brand">
+						<a href="index.html" rel="external">
+              <img src="img/mainlogo.png" alt="logo"
+            width="83" height="38" border="0">
+          </a>
+					</div>
+					<nav>
+						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<ul class="nav-list">
+							<li><a href="index.html" rel="external">Home</a></li>
+							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="news.html" rel="external">News</a></li>
+							<li><a href="events.html" rel="external">Events</a></li>
+							<li><a href="about.html" rel="external">About</a></li>
+							<li><a href="fav.html" rel="external">Favourites</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- /header -->
+		</header>
+
+		<main role="main" class="ui-content">
+			<h1>Loyalty Rewards</h1>
+
+			<div class="i-body ui-body-a ui-corner-all loyalty">
+				<p>You have <br> <span class="loyalty-points">0</span> <br> loyalty points</p>
+			</div>
+
+			<div class="i-body ui-body-a ui-corner-all vouchers" style="padding: 5px;">
+				<h3>Vouchers</h3>
+				<p class="no-voucher-text">You have no vouchers. Scan QR codes to find vouchers or earn 3 points to unlock a voucher.</p>
+				<div class="blackwell-vouchers" style="padding:20px; display:none;">
+					<img src="img/loyalty/blackwell-voucher.png"> <br> <br>
+					<a class="blackwell-vouchers-download-btn" href="img/loyalty/blackwell-voucher.png" rel="external" download>Claim this voucher</a>
+				</div>
+			</div>
+
+
+			<h3>Frequently asked questions:</h3>
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="false">
+					<h1>How many loyalty points do I get for an event booking?</h1>
+					<p>We give 1 loyalty point for every booking you make! or QR code scans you make. When you have 3 points you will recieve a voucher. On claiming the voucher your points will reset.
+					</p>
+				</div>
+				<div data-role="collapsible">
+					<h1>How do I redeem my loyalty points? </h1>
+					<p>When you have collected 3 loyalty points (they are going to be shown above) you can contact one of the team members
+						who is gonna send you the money back for your forth booking.</p>
+				</div>
+				<div data-role="collapsible">
+					<h1>I have just booked a ticket for an event. How can I check that my loyalty points have been redeemed on this order?</h1>
+					<p>It will be displayed on the email confirmation that is sent out automatically when the booking is made as well as on
+						this page.</p>
+				</div>
+				<div data-role="collapsible">
+					<h1>Do loyalty points expire?</h1>
+					<p>Yes, you must redeem your points within 12 months or they expire.</p>
+				</div>
+			</div>
+
+			<!-- /grid-a -->
+
+		</main>
+
+		<footer data-role="footer">
+			<p>BLURB &copy; book stores</p>
+			<p>115 New Cavendish Street <br> London W1W 6UW</p>
+		</footer>
+
+	</div>
+
+	<script>
+		// grab the points and set the text on the page 
+
+		if (sessionStorage.getItem('loyaltyPoints')) {
+			$('.loyalty-points').html(sessionStorage.getItem('loyaltyPoints'))
+		} else {
+			$('.loyalty-points').html('0')
+		}
+
+		// show the voucher when points = 3
+		if (sessionStorage.getItem('loyaltyPoints') == '3' || sessionStorage.getItem('loyaltyPoints') > 3) {
+			$('.no-voucher-text').hide()
+			$('.blackwell-vouchers').show()
+		} else {
+			$('.blackwell-vouchers').hide()
+		}
+
+		// hide the voucher and reset the points
+		$('.blackwell-vouchers-download-btn').click(function () {
+			$('.blackwell-vouchers').hide()
+			$('.no-voucher-text').show()
+			sessionStorage.clear()
+			location.reload()
+		})
+	</script>
+</body>
+
+</html>

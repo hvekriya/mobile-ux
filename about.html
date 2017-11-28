@@ -30,10 +30,10 @@
 						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
 						<ul class="nav-list">
 							<li><a href="index.html" rel="external">Home</a></li>
-							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
+							<li ><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
-							<li><a href="about.html" rel="external">About</a></li>
+							<li class="active"><a href="about.html" rel="external">About</a></li>
 							<li><a href="fav.html" rel="external">Favourites</a></li>
 						</ul>
 					</nav>
@@ -122,6 +122,15 @@
 					<p style="text-align: justify;">We encourage a loyalty initiative that encourages customers to advocate and engage more with the products included in the book retailers portfolio on a repeat basis.</p>	
 				</div>
 			</div>
+			<ul data-role="listview">
+				
+                <li style="text-align: center"><iframe class="video" width="100%" src="https://www.youtube.com/watch?v=BaauU5K_gBo" frameborder="0" allowfullscreen></iframe></li>
+                  <li><h3 style="text-align: center;">Multimedia and Games Computing at University of Westminster</h3></li>
+                <br>
+				  <br>
+				 
+            </ul>
+			
 			<!-- /grid-a -->
 			
 		</main>
@@ -143,7 +152,9 @@
 						<a href="index.html" rel="external">BLURB</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+            </div>
 						<ul class="nav-list">
 							<li><a href="index.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
@@ -164,10 +175,23 @@
 				<div class="ui-block-a">
 					<h1 class="student-name" style="color: #0e3c62">Calvin Keesoony, 20</h1>
 				</div>
+			
 				<div class="ui-block-b">
-					<button class="ui-btn add-fav-btn">Add to favourites</button>
-					<button class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</button>
-				</div>
+          <a class="ui-btn add-fav-btn" href="#student1-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+          <a class="ui-btn remove-fav-btn" style="display:none;" href="#student1-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+        </div>
+        <div data-role="popup" id="student1-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Added to favourites</h3>
+          <p>You have successfully added this student to favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+      <div data-role="popup" id="student1-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Removed from favourites</h3>
+          <p>You have successfully removed this student from favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
 			</div>
 			<!-- /grid-a -->
 			<div>
@@ -220,7 +244,9 @@
 						<a href="index.html" rel="external">BLURB</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+            </div>
 						<ul class="nav-list">
 							<li><a href="index.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
@@ -242,9 +268,21 @@
 					<h1 class="student-name" style="color: #0e3c62">Sam Collins, 21</h1>
 				</div>
 				<div class="ui-block-b">
-					<button class="ui-btn add-fav-btn">Add to favourites</button>
-					<button class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</button>
-				</div>
+          <a class="ui-btn add-fav-btn" href="#student2-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+          <a class="ui-btn remove-fav-btn" style="display:none;" href="#student2-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+        </div>
+        <div data-role="popup" id="student2-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Added to favourites</h3>
+          <p>You have successfully added this student to favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+      <div data-role="popup" id="student2-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Removed from favourites</h3>
+          <p>You have successfully removed this student from favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
 			</div>
 			<!-- /grid-a -->
 			<div>
@@ -297,7 +335,9 @@
 						<a href="index.html" rel="external">BLURB</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+            </div>
 						<ul class="nav-list">
 							<li><a href="index.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
@@ -319,9 +359,21 @@
 					<h1 class="student-name" style="color: #0e3c62">Haresh Vekryia, 22</h1>
 				</div>
 				<div class="ui-block-b">
-					<button class="ui-btn add-fav-btn">Add to favourites</button>
-					<button class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</button>
-				</div>
+          <a class="ui-btn add-fav-btn" href="#student3-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+          <a class="ui-btn remove-fav-btn" style="display:none;" href="#student3-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+        </div>
+        <div data-role="popup" id="student3-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Added to favourites</h3>
+          <p>You have successfully added this student to favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+      <div data-role="popup" id="student3-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Removed from favourites</h3>
+          <p>You have successfully removed this student from favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
 			</div>
 			<!-- /grid-a -->
 			<div>
@@ -332,15 +384,15 @@
 					<div class="ui-block-b store-info" style="width: 600px;">
 						
 						<h5 id="question" style="font-size: 16px">What's your favourite aspect about studying Multimedia Computing?</h5>
-			<p style="font-size: 14px">Please answer the questions, or find another ones if you don't like them.</p>
+			<p style="font-size: 14px">My favourite aspect about studying multimedia computing is learning new skills and technologies.</p>
 						<h5 id="question" style="font-size: 16px">Why do you think employers should choose to hire you after the graduation?</h5>
-			<p style="font-size: 14px">Please answer the questions, or find another ones if you don't like them.</p>
+			<p style="font-size: 14px">I am great at what I do and I have great team working skills which would be very valuable to employers.</p>
 						<h5 id="question" style="font-size: 16px">What's your favourite drink?</h5>
-			<p style="font-size: 14px">Please answer the questions, or find another ones if you don't like them.</p>
+			<p style="font-size: 14px">Water.</p>
 				  <h5 id="question" style="font-size: 16px">What do you enjoy doing outside the university?</h5>
-			<p style="font-size: 14px">Please answer the questions, or find another ones if you don't like them.</p>
+			<p style="font-size: 14px">Playing Xbox and football.</p>
 				  <h5 id="question" style="font-size: 16px">what is your dream holiday destination and why?</h5>
-			<p style="font-size: 14px">Please answer the questions, or find another ones if you don't like them.</p>
+			<p style="font-size: 14px">I don't have a specific destination. I want to travel the whole world.</p>
 					</div>
 				</div>
 
@@ -374,7 +426,9 @@
 						<a href="index.html" rel="external">BLURB</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+            </div>
 						<ul class="nav-list">
 							<li><a href="index.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
@@ -396,9 +450,21 @@
 					<h1 class="student-name" style="color: #0e3c62">Madalina Voiniciuc, 22</h1>
 				</div>
 				<div class="ui-block-b">
-					<button class="ui-btn add-fav-btn">Add to favourites</button>
-					<button class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</button>
-				</div>
+          <a class="ui-btn add-fav-btn" href="#student4-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+          <a class="ui-btn remove-fav-btn" style="display:none;" href="#student4-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+        </div>
+        <div data-role="popup" id="student4-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Added to favourites</h3>
+          <p>You have successfully added this student to favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+      <div data-role="popup" id="student4-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Removed from favourites</h3>
+          <p>You have successfully removed this student from favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
 			</div>
 			<!-- /grid-a -->
 			<div>

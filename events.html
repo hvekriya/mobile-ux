@@ -145,11 +145,26 @@
 					<h1 class="store-name">Oxford University Bookshop 40% off Sale</h1>
 				</div>
 				<div class="ui-block-b">
-					<a class="ui-btn add-fav-btn">Add to favourites</a>
-					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
-					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+          <a class="ui-btn add-fav-btn" href="#news-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+        </div>
+      
+      <div data-role="popup" id="news-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Added to favourites</h3>
+          <p>You have successfully added the item to favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+      <div data-role="popup" id="news-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Removed from favourites</h3>
+          <p>You have successfully removed the item from favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+					
 				</div>
-			</div>
+			
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -157,7 +172,7 @@
 						<img class="img-book-store" src="img/riba.png">
 					</div>
 					<div class="ui-block-b store-info">
-						<p>Description</p>
+						<p>Calling all students in the vicinity of Oxford! The prestigious and renound, Oxford University's very own bookstore is having a sale, but not 10, not 20, not even 30! That's right, up to 40% off all items in store right now! Is there some extra curricular lecture material that you usually is too pricey to get your hands on? Come on down and take a look at our range of books, studies and reports! </p>
 					</div>
 					
 					 
@@ -166,11 +181,13 @@
 				<p> ---- Gamification </p>
 				<br>
 				<ul data-role="listview">
-				<li><h3>See the location of the event</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+    <h2>Click to see the location of the event!</h2>
+    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li></ul>
 				<br>
                 <br>
-				</ul>
+				
 				<!-- /grid-b -->
 			</div>
 			
@@ -214,11 +231,25 @@
 					<h1 class="store-name">George RR Martin Book Signing</h1>
 				</div>
 				<div class="ui-block-b">
-					<a class="ui-btn add-fav-btn">Add to favourites</a>
-					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
-					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+          <a class="ui-btn add-fav-btn" href="#news-add-fav-2" data-rel="popup" data-position-to="window">Add to favourites</a>
+          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-2" data-rel="popup" data-position-to="window">Remove from favourites</a>
+          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+        </div>
+      
+      <div data-role="popup" id="news-add-fav-2" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Added to favourites</h3>
+          <p>You have successfully added the item to favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+      <div data-role="popup" id="news-remove-fav-2" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Removed from favourites</h3>
+          <p>You have successfully removed the item from favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
 				</div>
-			</div>
+			
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -238,8 +269,10 @@
 				<p> ---- Gamification </p>
 				<br>
 				<ul data-role="listview">
-				<li><h3>See the location of the event</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6731452684926!2d-0.13854078386036692!3d51.51921227963713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2be96f2f0f%3A0xbf583b2ba49e475e!2sOxfam+Shop!5e0!3m2!1sen!2suk!4v1511355381336" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+    <h2>Click to see the location of the event!</h2>
+    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li></ul>
 				<br>
                 <br>
             </ul>
@@ -287,11 +320,25 @@
 					<h1 class="store-name">JK Rowling Book Signing</h1>
 				</div>
 				<div class="ui-block-b">
-					<a class="ui-btn add-fav-btn">Add to favourites</a>
-					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
-					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+          <a class="ui-btn add-fav-btn" href="#news-add-fav-3" data-rel="popup" data-position-to="window">Add to favourites</a>
+          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-3" data-rel="popup" data-position-to="window">Remove from favourites</a>
+          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+        </div>
+      
+      <div data-role="popup" id="news-add-fav-3" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Added to favourites</h3>
+          <p>You have successfully added the item to favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+      <div data-role="popup" id="news-remove-fav-3" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Removed from favourites</h3>
+          <p>You have successfully removed the item from favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
 				</div>
-			</div>
+			
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -311,8 +358,10 @@
 				<p> ---- Gamification </p>
 				<br>
 				<ul data-role="listview">
-				<li><h3>See the location of the event</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.222801854389!2d-0.1382313196617218!3d51.50912831849736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876052172a28649%3A0xd391a6e0b4c7d79f!2sWaterstones+London+-+Piccadilly!5e0!3m2!1sen!2suk!4v1511355489930" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+    <h2>Click to see the location of the event!</h2>
+    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li></ul>
 				<br>
                 <br>
             </ul>
@@ -360,11 +409,25 @@
 					<h1 class="store-name">Fairies - Human Relations in British Lore</h1>
 				</div>
 				<div class="ui-block-b">
-					<a class="ui-btn add-fav-btn">Add to favourites</a>
-					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
-					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+          <a class="ui-btn add-fav-btn" href="#news-add-fav-4" data-rel="popup" data-position-to="window">Add to favourites</a>
+          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-4" data-rel="popup" data-position-to="window">Remove from favourites</a>
+          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+        </div>
+      
+      <div data-role="popup" id="news-add-fav-4" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Added to favourites</h3>
+          <p>You have successfully added the item to favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+      <div data-role="popup" id="news-remove-fav-4" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Removed from favourites</h3>
+          <p>You have successfully removed the item from favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
 				</div>
-			</div>
+			
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -385,8 +448,10 @@
 				<p> ---- Gamification </p>
 				<br>
 				<ul data-role="listview">
-				<li><h3>See the location of the event</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.634788491823!2d-0.13338461966146958!3d51.519915917708566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ca55a9bef7%3A0x38d16ad0b0f76071!2sTreadwell&#39;s+Books!5e0!3m2!1sen!2suk!4v1511355685026" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+    <h2>Click to see the location of the event!</h2>
+    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li></ul>
 				<br>
                 <br>
             </ul>
@@ -434,11 +499,25 @@
 					<h1 class="store-name">Andrew Marr - A Short Book about Painting Lecture</h1>
 				</div>
 				<div class="ui-block-b">
-					<a class="ui-btn add-fav-btn">Add to favourites</a>
-					<a class="ui-btn remove-fav-btn" style="display:none;">Remove from favourites</a>
-					<a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+          <a class="ui-btn add-fav-btn" href="#news-add-fav-5" data-rel="popup" data-position-to="window">Add to favourites</a>
+          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-5" data-rel="popup" data-position-to="window">Remove from favourites</a>
+          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
+        </div>
+      
+      <div data-role="popup" id="news-add-fav-5" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Added to favourites</h3>
+          <p>You have successfully added the item to favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
+      <div data-role="popup" id="news-remove-fav-5" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>Removed from favourites</h3>
+          <p>You have successfully removed the item from favourites</p>
+          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+      </div>
 				</div>
-			</div>
+			
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -460,8 +539,10 @@
 				<p> ---- Gamification </p>
 				<br>
 				<ul data-role="listview">
-				<li><h3>See the location of the event</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.607859306708!2d-0.15417708409299377!3d51.520409917572614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad1f747024d%3A0xe690429c82b85882!2sDaunt+Books!5e0!3m2!1sen!2suk!4v1511788050004" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+    <h2>Click to see the location of the event!</h2>
+    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li></ul>
 				<br>
                 <br>
             </ul>

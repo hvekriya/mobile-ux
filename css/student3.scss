@@ -139,3 +139,57 @@ button.goback-btn.ui-btn {
       margin: 0;
     }
   }
+
+  .iframe-map {
+    width: 400;
+    height: 300;
+
+    @include respond-to(iphone) {
+      width: 350;
+      height: 200;
+    }
+  }
+
+.loyalty {
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+.loyalty-points{
+  margin: 0;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  overflow: hidden;
+  border: none;
+  font: normal 70px/1 "VT323", Helvetica, sans-serif;
+  color: #0e3c62;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 5px 5px 0 rgba(255,255,255,1) ;
+}
+
+.coupon {
+    border: 5px dotted #bbb;
+    width: 40%;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.container-coupon {
+    padding: 2px 16px;
+    background-color: #f1f1f1;
+}
+
+.promo {
+    background: #ccc;
+    padding: 3px;
+}
+
+.expire {
+    color: red;
+}
