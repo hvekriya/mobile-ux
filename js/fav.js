@@ -33,9 +33,28 @@ if (localStorage.length == 0) {
   }
 }
 
+function getMailBody () {
+  for (var i = 0; i < localStorage.length; i++) {
+    return localStorage.getItem(localStorage.key(i))
+  }
+}
+
 $('.sendEmail').click(function (event) {
-  var email = $('#email').val()
-  var subject = 'Favourite List'
-  var emailBody = 'Hi,' + 'Regards, BLURB'
-  document.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody
+  // var email = $('#email').val()
+  // var subject = 'Favourite List'
+  // var emailBody = 'Hi,' + 'Regards, BLURB'
+  // document.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody
+
+  var data = {
+    email: $('#email').val(),
+    message: getMailBody()
+  }
+  $.ajax({
+    type: 'POST',
+    url: 'email.php',
+    data: data,
+    success: function () {
+      alert('Success')
+    }
+  })
 })

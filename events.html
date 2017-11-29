@@ -21,12 +21,12 @@
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
 						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li class="active"><a href="events.html" rel="external">Events</a></li>
@@ -40,6 +40,11 @@
 		</header>
 
 		<main role="main" class="ui-content">
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<h1>Events</h1>
 
 			<div class="ui-body ui-body-a ui-corner-all">
@@ -107,6 +112,7 @@
 		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
@@ -120,12 +126,12 @@
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile"> <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button> </div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li class="active"><a href="events.html" rel="external">Events</a></li>
@@ -139,32 +145,38 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
-					<h1 class="store-name">Oxford University Bookshop 40% off Sale</h1>
+					<h1 class="store-name event-name">Oxford University Bookshop 40% off Sale</h1>
 				</div>
 				<div class="ui-block-b">
-          <a class="ui-btn add-fav-btn" href="#news-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
-          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
-          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
-        </div>
-      
-      <div data-role="popup" id="news-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Added to favourites</h3>
-          <p>You have successfully added the item to favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-      <div data-role="popup" id="news-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Removed from favourites</h3>
-          <p>You have successfully removed the item from favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-					
+					<a class="ui-btn add-fav-btn" href="#news-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+					<a href="bookingpage.html" rel="external" class="ui-theme-a ui-btn book-now-btn">Book now</a>
 				</div>
-			
+
+				<div data-role="popup" id="news-add-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Added to favourites</h3>
+					<p>You have successfully added the item to favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+				<div data-role="popup" id="news-remove-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Removed from favourites</h3>
+					<p>You have successfully removed the item from favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+
+			</div>
+
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -172,46 +184,58 @@
 						<img class="img-book-store" src="img/riba.png">
 					</div>
 					<div class="ui-block-b store-info">
-						<p>Calling all students in the vicinity of Oxford! The prestigious and renound, Oxford University's very own bookstore is having a sale, but not 10, not 20, not even 30! That's right, up to 40% off all items in store right now! Is there some extra curricular lecture material that you usually is too pricey to get your hands on? Come on down and take a look at our range of books, studies and reports! </p>
+						<p class="event-description">Calling all students in the vicinity of Oxford! The prestigious and renound, Oxford University's very own bookstore
+							is having a sale, but not 10, not 20, not even 30! That's right, up to 40% off all items in store right now! Is there
+							some extra curricular lecture material that you usually is too pricey to get your hands on? Come on down and take
+							a look at our range of books, studies and reports! </p>
 					</div>
-					
-					 
+					<h3>Ticket details</h3>
+					<p>Adult:£<span class="adult-price">5.00</span></p>
+					<p>Children:£<span class="children-price">3.50</span></p>
+					<p>OAP:£<span class="oap-price">2.50</span></p>
+
 				</div>
 
-				<p> ---- Gamification </p>
+
 				<br>
 				<ul data-role="listview">
-				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
-    <h2>Click to see the location of the event!</h2>
-    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
-					</li></ul>
+
+					<li style="text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+
+						<h2>Click to see the location of the event!</h2>
+
+						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722"
+						 frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li>
+				</ul>
 				<br>
-                <br>
-				
+				<br>
+
 				<!-- /grid-b -->
 			</div>
-			
+
 		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
 
-	</div>			
-			<!-- Event 2 page -->
+	</div>
+	<!-- Event 2 page -->
 
 	<div data-role="page" id="events-2" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile"> <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button> </div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li class="active"><a href="events.html" rel="external">Events</a></li>
@@ -225,31 +249,37 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
-					<h1 class="store-name">George RR Martin Book Signing</h1>
+					<h1 class="store-name event-name">George RR Martin Book Signing</h1>
 				</div>
 				<div class="ui-block-b">
-          <a class="ui-btn add-fav-btn" href="#news-add-fav-2" data-rel="popup" data-position-to="window">Add to favourites</a>
-          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-2" data-rel="popup" data-position-to="window">Remove from favourites</a>
-          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
-        </div>
-      
-      <div data-role="popup" id="news-add-fav-2" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Added to favourites</h3>
-          <p>You have successfully added the item to favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-      <div data-role="popup" id="news-remove-fav-2" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Removed from favourites</h3>
-          <p>You have successfully removed the item from favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
+					<a class="ui-btn add-fav-btn" href="#news-add-fav-2" data-rel="popup" data-position-to="window">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-2" data-rel="popup" data-position-to="window">Remove from favourites</a>
+					<a href="bookingpage.html" rel="external" class="ui-theme-a ui-btn book-now-btn">Book now</a>
 				</div>
-			
+
+				<div data-role="popup" id="news-add-fav-2" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Added to favourites</h3>
+					<p>You have successfully added the item to favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+				<div data-role="popup" id="news-remove-fav-2" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Removed from favourites</h3>
+					<p>You have successfully removed the item from favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+			</div>
+
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -257,50 +287,63 @@
 						<img class="img-book-store" src="img/martin.png">
 					</div>
 					<div class="ui-block-b store-info">
-						<p>Game of Thrones' writer George RR Martin, in preparation for the release of the seventh book in the famed series, The Winds of Winter - is doing a book signing in celebration for its ever nearing release! Come on down to to our bookstore in Fitrovia for a chance to meet the man himself! The event will take place on the 4th January 2018.
-						<br>
-						<br>
-						Tickets will be priced at £10. Further details to be released at a later date. </p>
+						<p class="event-details">Game of Thrones' writer George RR Martin, in preparation for the release of the seventh book in the famed series, The
+							Winds of Winter - is doing a book signing in celebration for its ever nearing release! Come on down to to our bookstore
+							in Fitrovia for a chance to meet the man himself! The event will take place on the 4th January 2018.
+							<br>
+							<br>
+							<h3>Ticket details</h3>
+							<p>Adult:£<span class="adult-price">5.00</span></p>
+							<p>Children:£<span class="children-price">3.50</span></p>
+							<p>OAP:£<span class="oap-price">2.50</span></p>
+						</p>
 					</div>
-					
-					
+
+
 				</div>
 
-				<p> ---- Gamification </p>
+
 				<br>
 				<ul data-role="listview">
-				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
-    <h2>Click to see the location of the event!</h2>
-    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
-					</li></ul>
+
+					<li style="text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+
+						<h2>Click to see the location of the event!</h2>
+
+						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722"
+						 frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li>
+				</ul>
 				<br>
-                <br>
-            </ul>
+				<br>
+				</ul>
 				<!-- /grid-b -->
 			</div>
 
 		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
 
 	</div>
-	
+
 	<!-- Event 3 page -->
 
 	<div data-role="page" id="events-3" class="page">
+
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile"> <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button> </div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li class="active"><a href="events.html" rel="external">Events</a></li>
@@ -314,31 +357,37 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
-					<h1 class="store-name">JK Rowling Book Signing</h1>
+					<h1 class="store-name event-name">JK Rowling Book Signing</h1>
 				</div>
 				<div class="ui-block-b">
-          <a class="ui-btn add-fav-btn" href="#news-add-fav-3" data-rel="popup" data-position-to="window">Add to favourites</a>
-          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-3" data-rel="popup" data-position-to="window">Remove from favourites</a>
-          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
-        </div>
-      
-      <div data-role="popup" id="news-add-fav-3" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Added to favourites</h3>
-          <p>You have successfully added the item to favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-      <div data-role="popup" id="news-remove-fav-3" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Removed from favourites</h3>
-          <p>You have successfully removed the item from favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
+					<a class="ui-btn add-fav-btn" href="#news-add-fav-3" data-rel="popup" data-position-to="window">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-3" data-rel="popup" data-position-to="window">Remove from favourites</a>
+					<a href="bookingpage.html" rel="external" class="ui-theme-a ui-btn book-now-btn">Book now</a>
 				</div>
-			
+
+				<div data-role="popup" id="news-add-fav-3" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Added to favourites</h3>
+					<p>You have successfully added the item to favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+				<div data-role="popup" id="news-remove-fav-3" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Removed from favourites</h3>
+					<p>You have successfully removed the item from favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+			</div>
+
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -346,50 +395,62 @@
 						<img class="img-book-store" src="img/JK.png">
 					</div>
 					<div class="ui-block-b store-info">
-						<p>Famed for writing one of the most influential children's books series of the 20th and 21st centuries, Harry Potter - JK Rowling will be doing an exclusive book signing surrounding all things magical! As well this one off book signing event, JK will be doing a short 30min talk about her rise to fame with the help of Harry and his friends, as well as how the sucess of Harry Potter has changed her life. This one of a kind event shall be taking place on the 21st December 2017.
+						<p class="event-description">Famed for writing one of the most influential children's books series of the 20th and 21st centuries, Harry Potter
+							- JK Rowling will be doing an exclusive book signing surrounding all things magical! As well this one off book signing
+							event, JK will be doing a short 30min talk about her rise to fame with the help of Harry and his friends, as well
+							as how the sucess of Harry Potter has changed her life. This one of a kind event shall be taking place on the 21st
+							December 2017. </p>
 						<br>
-						<br>
-						Tickets will be £15. Entrace time will be 7-7:30pm</p>
+						<h3>Ticket details</h3>
+						<p>Adult:£<span class="adult-price">5.00</span></p>
+						<p>Children:£<span class="children-price">3.50</span></p>
+						<p>OAP:£<span class="oap-price">2.50</span></p>
 					</div>
-					
-					
+
+
 				</div>
 
-				<p> ---- Gamification </p>
+
 				<br>
 				<ul data-role="listview">
-				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
-    <h2>Click to see the location of the event!</h2>
-    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
-					</li></ul>
+
+					<li style="text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+
+						<h2>Click to see the location of the event!</h2>
+
+						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722"
+						 frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li>
+				</ul>
 				<br>
-                <br>
-            </ul>
+				<br>
+				</ul>
 				<!-- /grid-b -->
 			</div>
-			
-					</main>
+
+		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
 
 	</div>
-			
-			<!-- Event 4 page -->
+
+	<!-- Event 4 page -->
 
 	<div data-role="page" id="events-4" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile"> <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button> </div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li class="active"><a href="events.html" rel="external">Events</a></li>
@@ -403,31 +464,37 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
-					<h1 class="store-name">Fairies - Human Relations in British Lore</h1>
+					<h1 class="store-name event-name">Fairies - Human Relations in British Lore</h1>
 				</div>
 				<div class="ui-block-b">
-          <a class="ui-btn add-fav-btn" href="#news-add-fav-4" data-rel="popup" data-position-to="window">Add to favourites</a>
-          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-4" data-rel="popup" data-position-to="window">Remove from favourites</a>
-          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
-        </div>
-      
-      <div data-role="popup" id="news-add-fav-4" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Added to favourites</h3>
-          <p>You have successfully added the item to favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-      <div data-role="popup" id="news-remove-fav-4" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Removed from favourites</h3>
-          <p>You have successfully removed the item from favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
+					<a class="ui-btn add-fav-btn" href="#news-add-fav-4" data-rel="popup" data-position-to="window">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-4" data-rel="popup" data-position-to="window">Remove from favourites</a>
+					<a href="bookingpage.html" rel="external" class="ui-theme-a ui-btn book-now-btn">Book now</a>
 				</div>
-			
+
+				<div data-role="popup" id="news-add-fav-4" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Added to favourites</h3>
+					<p>You have successfully added the item to favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+				<div data-role="popup" id="news-remove-fav-4" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Removed from favourites</h3>
+					<p>You have successfully removed the item from favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+			</div>
+
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -435,51 +502,66 @@
 						<img class="img-book-store" src="img/fairy.png">
 					</div>
 					<div class="ui-block-b store-info">
-						<p>The British lore of fairies has long fascinated folklorists, but tonight’s speaker is a researcher who has examined fairies in terms of theme, with some surprising results. Tonight he talks to us about how, according to folklore, humans and fairies engage with one another, and how those relationships are negotiated by the rules of gift, taboo and seduction.  Tonight’s speaker looks at the nuts and bolts of how to deal with them  – and how they deal with us — by looking at offerings, theft (including of babies), causing offence, romance and even love between humans and fairies. The customs and stories which are handed down in the oral tradition tell of a complex and sometimes contradictory relationship between the human and otherworldly beings.   Join us for an evening of informative engagement, and not a little fun.</p>
-						<p>Monday 14th December 2017</p>
-						<p>Time: Please arrive 7.15 pm for a 7.30 pm start. No latecomers once lecture has started.
-
-						Price: £8  Ring, or book online here – tickets below</p>
+						<p>The British lore of fairies has long fascinated folklorists, but tonight’s speaker is a researcher who has examined
+							fairies in terms of theme, with some surprising results. Tonight he talks to us about how, according to folklore,
+							humans and fairies engage with one another, and how those relationships are negotiated by the rules of gift, taboo
+							and seduction. Tonight’s speaker looks at the nuts and bolts of how to deal with them – and how they deal with us
+							— by looking at offerings, theft (including of babies), causing offence, romance and even love between humans and
+							fairies. The customs and stories which are handed down in the oral tradition tell of a complex and sometimes contradictory
+							relationship between the human and otherworldly beings. Join us for an evening of informative engagement, and not
+							a little fun.</p>
+						<p class="event-description">Monday 14th December 2017
+							<br><br> Time: Please arrive 7.15 pm for a 7.30 pm start. No latecomers once lecture has started.</p>
+						<h3>Ticket details</h3>
+						<p>Adult:£<span class="adult-price">5.00</span></p>
+						<p>Children:£<span class="children-price">3.50</span></p>
+						<p>OAP:£<span class="oap-price">2.50</span></p>
 					</div>
-					
-					
+
+
 				</div>
 
-				<p> ---- Gamification </p>
+
 				<br>
 				<ul data-role="listview">
-				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
-    <h2>Click to see the location of the event!</h2>
-    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
-					</li></ul>
+
+					<li style="text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+
+						<h2>Click to see the location of the event!</h2>
+
+						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722"
+						 frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li>
+				</ul>
 				<br>
-                <br>
-            </ul>
+				<br>
+				</ul>
 				<!-- /grid-b -->
 			</div>
-			
-					</main>
+
+		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
 
 	</div>
-			
-			<!-- Event 5 page -->
+
+	<!-- Event 5 page -->
 
 	<div data-role="page" id="events-5" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile"> <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button> </div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li class="active"><a href="events.html" rel="external">Events</a></li>
@@ -493,31 +575,37 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
-					<h1 class="store-name">Andrew Marr - A Short Book about Painting Lecture</h1>
+					<h1 class="store-name event-name">Andrew Marr - A Short Book about Painting Lecture</h1>
 				</div>
 				<div class="ui-block-b">
-          <a class="ui-btn add-fav-btn" href="#news-add-fav-5" data-rel="popup" data-position-to="window">Add to favourites</a>
-          <a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-5" data-rel="popup" data-position-to="window">Remove from favourites</a>
-          <a href="" rel="external" class="ui-theme-a  ui-btn">Book now</a>
-        </div>
-      
-      <div data-role="popup" id="news-add-fav-5" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Added to favourites</h3>
-          <p>You have successfully added the item to favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-      <div data-role="popup" id="news-remove-fav-5" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Removed from favourites</h3>
-          <p>You have successfully removed the item from favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
+					<a class="ui-btn add-fav-btn" href="#news-add-fav-5" data-rel="popup" data-position-to="window">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;" href="#news-remove-fav-5" data-rel="popup" data-position-to="window">Remove from favourites</a>
+					<a href="bookingpage.html" rel="external" class="ui-theme-a  ui-btn book-now-btn">Book now</a>
 				</div>
-			
+
+				<div data-role="popup" id="news-add-fav-5" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Added to favourites</h3>
+					<p>You have successfully added the item to favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+				<div data-role="popup" id="news-remove-fav-5" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Removed from favourites</h3>
+					<p>You have successfully removed the item from favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+			</div>
+
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
@@ -525,33 +613,46 @@
 						<img class="img-book-store" src="img/marr.png">
 					</div>
 					<div class="ui-block-b store-info">
-						<p>In A Short Book About Painting, writer and broadcaster Andrew Marr tackles the subjects of inspiration, creativity, politics, beauty and form. Following a serious stroke in 2013 that left him partially paralysed, Marr struggled with the physical rigours of painting using oils. This led to his wrestling with some of the very fundamental questions about painting as an art form in itself and to interrogate himself daily about brushstrokes, colour balance, line and texture. Using his own work in progress as examples of failures, and examples of techniques from classical artists right up to the present day, Marr examines how the painter can improve and learn from his or her mistakes.</p>
-						<p>Thursday 20th December 2017</p>
-						<p>Event starts at 7:00pm .
-
-						Tickets are £10 and entitle the holder to a glass of wine and 20% off the speakers' books.
-						This event takes place at Daunt Books Marylebone, 83 Marylebone High Street, London W1U 4QW</p>
+						<p>In A Short Book About Painting, writer and broadcaster Andrew Marr tackles the subjects of inspiration, creativity,
+							politics, beauty and form. Following a serious stroke in 2013 that left him partially paralysed, Marr struggled with
+							the physical rigours of painting using oils. This led to his wrestling with some of the very fundamental questions
+							about painting as an art form in itself and to interrogate himself daily about brushstrokes, colour balance, line
+							and texture. Using his own work in progress as examples of failures, and examples of techniques from classical artists
+							right up to the present day, Marr examines how the painter can improve and learn from his or her mistakes.</p>
+						<p class="event-description">Thursday 20th December 2017 <br>
+							<br><br>Event starts at 7:00pm . This event takes place at Daunt Books Marylebone, 83 Marylebone High Street, London
+							W1U 4QW</p>
+						<h3>Ticket details</h3>
+						<p>Adult:£<span class="adult-price">5.00</span></p>
+						<p>Children:£<span class="children-price">3.50</span></p>
+						<p>OAP:£<span class="oap-price">2.50</span></p>
 					</div>
-					
-					
+
+
 				</div>
 
-				<p> ---- Gamification </p>
+
 				<br>
 				<ul data-role="listview">
-				  <li style = "text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
-    <h2>Click to see the location of the event!</h2>
-    						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
-					</li></ul>
+
+					<li style="text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+
+						<h2>Click to see the location of the event!</h2>
+
+						<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.951332974985!2d-1.2575593838537553!3d51.75221347967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511789366722"
+						 frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+					</li>
+				</ul>
 				<br>
-                <br>
-            </ul>
+				<br>
+				</ul>
 				<!-- /grid-b -->
 			</div>
-			
-					</main>
+
+		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>

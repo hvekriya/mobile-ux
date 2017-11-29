@@ -1,12 +1,11 @@
-
-//save to fav functions
+// save to fav functions
 // This code goes on every page that has add to fav feature 
 checkForFavourites()
 
-$(window).on('hashchange', function(e){
-    checkForFavourites() // this becuase when you go back and click on news item again the page isnt loaded so the function thats called above 
-  // does not get called. 
-});
+$(window).on('hashchange', function (e) {
+  checkForFavourites() // this becuase when you go back and click on news item again the page isnt loaded so the function thats called above 
+// does not get called. 
+})
 
 var news = 0
 
@@ -38,7 +37,7 @@ function checkForFavourites () {
   }
 }
 
-//sort functions
+// sort functions
 
 tinysort('ul.stores-list>li', {order: 'asc'})
 
@@ -68,4 +67,19 @@ $('.sort-asc-desc').change(function () {
     tinysort('ul.stores-list>li', {order: 'desc'})
   }
 })
-// JavaScript Document
+
+// grab the ticket prices and event details and save to storage
+
+$('.book-now-btn').click(function () {
+  var eventName = $('.ui-page-active .event-name').text()
+  var eventDescription = $('.ui-page-active .event-description').text()
+  var adultPrice = $('.ui-page-active .adult-price').text()
+  var childrenPrice = $('.ui-page-active .children-price').text()
+  var oapPrice = $('.ui-page-active .oap-price').text()
+
+  localStorage.setItem('eventName', eventName)
+  localStorage.setItem('eventDescription', eventDescription)
+  localStorage.setItem('adultPrice', adultPrice)
+  localStorage.setItem('childrenPrice', childrenPrice)
+  localStorage.setItem('oapPrice', oapPrice)
+})

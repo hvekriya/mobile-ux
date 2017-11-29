@@ -1,13 +1,13 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
   <title>BLURB</title>
   <link rel="stylesheet" href="css/themes/Mobile-UX.min.css" />
   <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-  <link rel="stylesheet" href="css/student3.css">
+  <link rel="stylesheet" href="css/student3.css" />
 
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -21,15 +21,15 @@
       <section class="navigation">
         <div class="nav-container">
           <div class="brand">
-            <a href="index.html" rel="external">
+            <a href="home.html" rel="external">
               <img src="img/mainlogo.png" alt="logo"
-            width="83" height="38" border="0">
+            width="83" height="38" border="0"></img>
           </a>
           </div>
           <nav>
             <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
             <ul class="nav-list">
-              <li><a href="index.html" rel="external">Home</a></li>
+              <li><a href="home.html" rel="external">Home</a></li>
               <li><a href="stores.html" rel="external">Stores</a></li>
               <li><a href="news.html" rel="external">News</a></li>
               <li><a href="events.html" rel="external">Events</a></li>
@@ -43,7 +43,11 @@
     </header>
 
     <main role="main" class="ui-content">
-
+      <div class="ui-grid-a ipad-only">
+        <div class="ui-block-c">
+          <a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+        </div>
+      </div>
       <h1>Favourites</h1>
 
       <div class="ui-body ui-body-a ui-corner-all fav">
@@ -66,16 +70,18 @@
 
       <div class="ui-body ui-body-a ui-corner-all">
         <h3>Email favourites list</h3>
-        <form action="POST">
+        <form method="POST">
           <label for="email">Email:</label>
-          <input type="email" name="email" id="email" value="">
+          <input type="email" name="email" id="email" value=""></input>
+          <input class="ui-btn sendEmail" type="submit" name="send" value="Send now" />
         </form>
-        <button class="ui-btn sendEmail">Send now</button>
       </div>
+
 
     </main>
 
     <footer data-role="footer">
+      <a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
       <p>BLURB &copy; book stores</p>
       <p>115 New Cavendish Street <br> London W1W 6UW</p>
     </footer>
@@ -83,7 +89,6 @@
   </div>
 
   <script src="js/fav.js"></script>
-
 </body>
 
 </html>

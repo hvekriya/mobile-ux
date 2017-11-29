@@ -12,7 +12,7 @@ var v = null
 
 var imghtml = '<div id="qrfile"><canvas id="out-canvas" width="320" height="240"></canvas>' +
   '<div id="imghelp">drag and drop a QRCode here' +
-  '<br>or select a file' +
+  '<br>or select a file <br><br>' +
   '<input type="file" onchange="handleFiles(this.files)"/>' +
   '</div>' +
   '</div>'
@@ -99,15 +99,9 @@ function read (a) {
 
   // collect loyalty points
   addLoyaltyPoints()
-
-  // check for voucher URL and show them on loyalty page 
-  if (a == '') {
-      
-  } else {
-      
-  }
-  // redirect them to the url that comes from the QR code
-  window.location.href = a
+  // redirect them to the url that comes from the QR code or open a pop up
+  $( "#qr-scanned" ).popup( "open" );
+  // window.location.href = a
 
   document.getElementById('result').innerHTML = html
 }
@@ -181,7 +175,7 @@ function setwebcam () {
 
 function setwebcam2 (options) {
   console.log(options)
-  document.getElementById('result').innerHTML = '- scanning -'
+  document.getElementById('result').innerHTML = '<div class="loader"></div>Scanning'
   if (stype == 1) {
     setTimeout(captureToCanvas, 500)
     return

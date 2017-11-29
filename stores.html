@@ -1,4 +1,5 @@
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +8,7 @@
 	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 	<link rel="stylesheet" href="css/student3.css">
+	<link rel="stylesheet" href="css/student1.css">
 
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -20,7 +22,7 @@
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">
+						<a href="home.html" rel="external">
 						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
@@ -28,7 +30,7 @@
 					<nav>
 						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -41,6 +43,11 @@
 		</header>
 
 		<main role="main" class="ui-content">
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<h1>Stores</h1>
 
 			<div class="ui-body ui-body-a ui-corner-all">
@@ -131,28 +138,31 @@
 		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
 
 	</div>
 
-	<!---------- Store 1 page ---------->
+	<!-- Store 1 page -->
 
 	<div data-role="page" id="store-1" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">
+						<a href="home.html" rel="external">
 						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -166,7 +176,11 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="store-name">RIBA Bookshops</h1>
@@ -182,62 +196,68 @@
 					<div class="ui-block-a">
 						<img class="img-book-store" src="img/riba.jpg">
 					</div>
-					
+
 					<div class="description">
-					<p>Our central London building is open to the public, with rooms available for hire. Explore our free exhibitions, attend an event, learn at our library, browse our bookshop or enjoy a coffee or meal in our cafe and bistro at 66 Portland Place.</p>
+						<p>Our central London building is open to the public, with rooms available for hire. Explore our free exhibitions, attend
+							an event, learn at our library, browse our bookshop or enjoy a coffee or meal in our cafe and bistro at 66 Portland
+							Place.</p>
 					</div>
-					
+
 					<div class="ui-block-b store-info">
 						<p>Address
-						<br>66 Portland Place 
-						<br>Marylebone, London 
-						<br>W1B 1AD</p>
+							<br>66 Portland Place
+							<br>Marylebone, London
+							<br>W1B 1AD</p>
 					</div>
 				</div>
-				
+
 				<div class="services">
-				<p>Services
-				<br>Cafe and bistro
-				<br>Library
-				<br>Hire a venue
-				<br>Guided tour
-				</p>
+					<p>Services
+						<br>Cafe and bistro
+						<br>Library
+						<br>Hire a venue
+						<br>Guided tour
+					</p>
 				</div>
-				
-               <ul data-role="listview">
-				<li><h3>See the location of the store</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1656.8983300316434!2d-0.14655807082480143!3d51.52160962649897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad693aa8ded%3A0xbd0c6c74b6810cd4!2sRIBA+Bookshops!5e0!3m2!1sen!2suk!4v1511354703309" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+
 				<br>
-                <br>
-            </ul>
-				<!-- /grid-b -->
+				<ul data-role="listview">
+					<li style="text-align: center" data-role="collapsible" data-iconpos="right" data-inset="false">
+						<h3>See the location of the store</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1656.8983300316434!2d-0.14655807082480143!3d51.52160962649897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad693aa8ded%3A0xbd0c6c74b6810cd4!2sRIBA+Bookshops!5e0!3m2!1sen!2suk!4v1511354703309"
+						 width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</li>
+				</ul>
 			</div>
 
 		</main>
-		
+
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
-		
+
 	</div>
-		
-		<!---------- Store Page 2 -------------->
-		
-		<div data-role="page" id="store-2" class="page">
+
+	<!--Store Page 2 -->
+
+	<div data-role="page" id="store-2" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">
+						<a href="home.html" rel="external">
 						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -249,10 +269,14 @@
 			</section>
 			<!-- /header -->
 		</header>
-		
+
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="store-name">Oxfam</h1>
@@ -268,64 +292,69 @@
 					<div class="ui-block-a">
 						<img class="img-book-store" src="img/oxfam.jpg">
 					</div>
-					
+
 					<div class="description">
-					<p>A really great range for all Oxfam shoppers! We sell a variety of donated clothes and accessories, books, and homewares. We also stock a range of Fairtrade food as well as a good selection of greetings cards and stationery. Call us for more information!</p>
+						<p>A really great range for all Oxfam shoppers! We sell a variety of donated clothes and accessories, books, and homewares.
+							We also stock a range of Fairtrade food as well as a good selection of greetings cards and stationery. Call us for
+							more information!</p>
 					</div>
-					
+
 					<div class="ui-block-b store-info">
 						<p>Address
-						<br>52 Goodge St 
-						<br>Fitzrovia, London 
-						<br>W1T 4LZ
+							<br>52 Goodge St
+							<br>Fitzrovia, London
+							<br>W1T 4LZ
 						</p>
 					</div>
 				</div>
-				
+
 				<div class="services">
-				<p>Services
-				<br>Accepts donations - Clothing, Books, Music, Shoes and Homeware
-				<br>Stock fairtrade food
-				<br>Greeting cards and stationary
-				<br>Accepts voluntary work
-				</p>
+					<p>Services
+						<br>Accepts donations - Clothing, Books, Music, Shoes and Homeware
+						<br>Stock fairtrade food
+						<br>Greeting cards and stationary
+						<br>Accepts voluntary work
+					</p>
 				</div>
-				
+
 				<ul data-role="listview">
-				<li><h3>See the location of the store</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6731452684926!2d-0.13854078386036692!3d51.51921227963713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2be96f2f0f%3A0xbf583b2ba49e475e!2sOxfam+Shop!5e0!3m2!1sen!2suk!4v1511355381336" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-				<br>
-                <br>
-            </ul>
-				<!-- /grid-b -->
+					<li style="text-align: center" data-role="collapsible" data-iconpos="right" data-inset="false">
+						<h3>See the location of the store</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6731452684926!2d-0.13854078386036692!3d51.51921227963713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2be96f2f0f%3A0xbf583b2ba49e475e!2sOxfam+Shop!5e0!3m2!1sen!2suk!4v1511355381336"
+						 width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</li>
+				</ul>
 			</div>
 
 		</main>
-		
+
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
-		
+
 	</div>
 
 
-        <!---------- Store Page 3 -------------->
-		
-		<div data-role="page" id="store-3" class="page">
+	<!---------- Store Page 3 -------------->
+
+	<div data-role="page" id="store-3" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">
+						<a href="home.html" rel="external">
 						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -337,10 +366,14 @@
 			</section>
 			<!-- /header -->
 		</header>
-		
+
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="store-name">Waterstones</h1>
@@ -356,63 +389,68 @@
 					<div class="ui-block-a">
 						<img class="img-book-store" src="img/waterstones.jpg">
 					</div>
-					
+
 					<div class="description">
-					<p>There is truly something to be found for even the most discerning of readers, from our flagship Fiction, Travel, History and Art sections or from across the wider branch. We are especially proud of our Children's section, modelled on a (Piccadilly) Circus theme and full of activities and events as well as the latest releases and old favourites.</p>
+						<p>There is truly something to be found for even the most discerning of readers, from our flagship Fiction, Travel, History
+							and Art sections or from across the wider branch. We are especially proud of our Children's section, modelled on a
+							(Piccadilly) Circus theme and full of activities and events as well as the latest releases and old favourites.</p>
 					</div>
-					
+
 					<div class="ui-block-b store-info">
-						<p>203-206 Piccadilly 
-						<br>St. James's, London 
-						<br>W1V 9LE
+						<p>203-206 Piccadilly
+							<br>St. James's, London
+							<br>W1V 9LE
 						</p>
 
 					</div>
 				</div>
-				
+
 				<div class="services">
-				<p>Services
-				<br>Lower Ground Floor - Travel and Cafe
-				<br>Ground Floor - Click and Collect
-				<br>Mezzanine - Cafe and Stationary/Gifts
-				<br>Fifth Floor - 5th View Bar and Restaurant
-				</p>
+					<p>Services
+						<br>Lower Ground Floor - Travel and Cafe
+						<br>Ground Floor - Click and Collect
+						<br>Mezzanine - Cafe and Stationary/Gifts
+						<br>Fifth Floor - 5th View Bar and Restaurant
+					</p>
 				</div>
-				
+
 				<ul data-role="listview">
-				<li><h3>See the location of the store</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.222801854389!2d-0.1382313196617218!3d51.50912831849736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876052172a28649%3A0xd391a6e0b4c7d79f!2sWaterstones+London+-+Piccadilly!5e0!3m2!1sen!2suk!4v1511355489930" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-				<br>
-                <br>
-            </ul>
-				<!-- /grid-b -->
+					<li style="text-align: center" data-role="collapsible" data-iconpos="right" data-inset="false">
+						<h3>See the location of the store</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.222801854389!2d-0.1382313196617218!3d51.50912831849736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876052172a28649%3A0xd391a6e0b4c7d79f!2sWaterstones+London+-+Piccadilly!5e0!3m2!1sen!2suk!4v1511355489930"
+						 width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</li>
+				</ul>
 			</div>
 
 		</main>
-       
-       	<footer data-role="footer">
+
+		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
-		
+
 	</div>
-        
-        <!---------- Store Page 4 -------------->
-		
-		<div data-role="page" id="store-4" class="page">
+
+	<!---------- Store Page 4 -------------->
+
+	<div data-role="page" id="store-4" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">
+						<a href="home.html" rel="external">
 						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -424,10 +462,14 @@
 			</section>
 			<!-- /header -->
 		</header>
-		
+
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="store-name">Treadwell's Books</h1>
@@ -443,63 +485,69 @@
 					<div class="ui-block-a">
 						<img class="img-book-store" src="img/treadwells.jpg">
 					</div>
-					
+
 					<div class="description">
-					<p>Our shop in London’s historic Bloomsbury is our headquarters and bookshop, as well as our centre for book launches, workshops, classes, lectures and tarot readings.  We are open seven days a week. Our office is here, too, and if you phone us, this is where your call comes to. Visit us to browse occult books, magazines, second-hand volumes, rare books, paperbacks and small fine press publications.</p>
+						<p>Our shop in London’s historic Bloomsbury is our headquarters and bookshop, as well as our centre for book launches,
+							workshops, classes, lectures and tarot readings. We are open seven days a week. Our office is here, too, and if you
+							phone us, this is where your call comes to. Visit us to browse occult books, magazines, second-hand volumes, rare
+							books, paperbacks and small fine press publications.</p>
 					</div>
-					
+
 					<div class="ui-block-b store-info">
-						<p>33 Store St 
-						<br>Bloomsbury, London 
-						<br>WC1E 7BS
+						<p>33 Store St
+							<br>Bloomsbury, London
+							<br>WC1E 7BS
 						</p>
 
 					</div>
 				</div>
-				
+
 				<div class="services">
-				<p>Services
-				<br>Magical supplies
-				<br>Room hire
-				<br>Tarot readings
-				<br>Bookshop film location
-				</p>
+					<p>Services
+						<br>Magical supplies
+						<br>Room hire
+						<br>Tarot readings
+						<br>Bookshop film location
+					</p>
 				</div>
-				
+
 				<ul data-role="listview">
-				<li><h3>See the location of the store</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.634788491823!2d-0.13338461966146958!3d51.519915917708566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ca55a9bef7%3A0x38d16ad0b0f76071!2sTreadwell&#39;s+Books!5e0!3m2!1sen!2suk!4v1511355685026" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-				<br>
-                <br>
-            </ul>
-				<!-- /grid-b -->
+					<li style="text-align: center" data-role="collapsible" data-iconpos="right" data-inset="false">
+						<h3>See the location of the store</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.634788491823!2d-0.13338461966146958!3d51.519915917708566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ca55a9bef7%3A0x38d16ad0b0f76071!2sTreadwell&#39;s+Books!5e0!3m2!1sen!2suk!4v1511355685026"
+						 width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</li>
+				</ul>
 			</div>
 
 		</main>
-       
-       	<footer data-role="footer">
+
+		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
-		
+
 	</div>
-        
-        <!---------- Store Page 5 -------------->
-		
-		<div data-role="page" id="store-5" class="page">
+
+	<!---------- Store Page 5 -------------->
+
+	<div data-role="page" id="store-5" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">
+						<a href="home.html" rel="external">
 						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -511,10 +559,14 @@
 			</section>
 			<!-- /header -->
 		</header>
-		
+
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="store-name">Oxford University Press Bookshop</h1>
@@ -530,63 +582,69 @@
 					<div class="ui-block-a">
 						<img class="img-book-store" src="img/oxforduni.jpg">
 					</div>
-					
+
 					<div class="description">
-					<p>The Bookshop offers Press stakeholders, members of the University of Oxford, and the public a unique opportunity to discover OUP’s output. From world famous imprints such as Oxford World’s Classics and Oxford Dictionaries, to specialist monographs in ground-breaking disciplines, our academic range is complemented by a substantial and unparalleled stockholding of Oxford’s English Language Teaching materials, and educational and general books for children.</p>
+						<p>The Bookshop offers Press stakeholders, members of the University of Oxford, and the public a unique opportunity to
+							discover OUP’s output. From world famous imprints such as Oxford World’s Classics and Oxford Dictionaries, to specialist
+							monographs in ground-breaking disciplines, our academic range is complemented by a substantial and unparalleled stockholding
+							of Oxford’s English Language Teaching materials, and educational and general books for children.</p>
 					</div>
-					
+
 					<div class="ui-block-b store-info">
-						<p>116-117 High St 
-						<br>Oxford 
-						<br>OX1 4BZ
+						<p>116-117 High St
+							<br>Oxford
+							<br>OX1 4BZ
 						</p>
 
 					</div>
 				</div>
-				
+
 				<div class="services">
-				<p>Services
-				<br>Teaching materials
-				<br>General books
-				<br>Childrens section
-				<br>Discounts for members of the Unversity of Oxford alumni
-				</p>
+					<p>Services
+						<br>Teaching materials
+						<br>General books
+						<br>Childrens section
+						<br>Discounts for members of the Unversity of Oxford alumni
+					</p>
 				</div>
-				
+
 				<ul data-role="listview">
-				<li><h3>See the location of the store</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9511513565844!2d-1.2575540196549975!3d51.752216800693645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511355746257" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-				<br>
-                <br>
-            </ul>
-				<!-- /grid-b -->
+					<li style="text-align: center" data-role="collapsible" data-iconpos="right" data-inset="false">
+						<h3>See the location of the store</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9511513565844!2d-1.2575540196549975!3d51.752216800693645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afb48d0e13%3A0x84dc8b008e3d42de!2sOxford+University+Press+Book+Shop!5e0!3m2!1sen!2suk!4v1511355746257"
+						 width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</li>
+				</ul>
 			</div>
 
 		</main>
-       
-       	<footer data-role="footer">
+
+		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
-		
+
 	</div>
-        
-        <!---------- Store Page 6 -------------->
-		
-		<div data-role="page" id="store-6" class="page">
+
+	<!---------- Store Page 6 -------------->
+
+	<div data-role="page" id="store-6" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">
+						<a href="home.html" rel="external">
 						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -598,10 +656,14 @@
 			</section>
 			<!-- /header -->
 		</header>
-		
+
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="store-name">Paramount Books</h1>
@@ -617,62 +679,66 @@
 					<div class="ui-block-a">
 						<img class="img-book-store" src="img/paramount.jpg">
 					</div>
-					
+
 					<div class="description">
-					<p>We are located at the heart of Manchester City centre. We have science fiction, fantasy, classic novels, modern paperbacks and the best selection of comics and graphics. We also have a great selection of out of print books.</p>
+						<p>We are located at the heart of Manchester City centre. We have science fiction, fantasy, classic novels, modern paperbacks
+							and the best selection of comics and graphics. We also have a great selection of out of print books.</p>
 					</div>
-					
+
 					<div class="ui-block-b store-info">
-						<p>25-27 Shudehill 
-						<br>Manchester 
-						<br>M4 2AF
+						<p>25-27 Shudehill
+							<br>Manchester
+							<br>M4 2AF
 						</p>
 
 					</div>
 				</div>
-				
+
 				<div class="services">
-				<p>Services
-				<br>New and used books
-				<br>Books, Comic books and magazines
-				<br>Rare 1st edition books
-				</p>
+					<p>Services
+						<br>New and used books
+						<br>Books, Comic books and magazines
+						<br>Rare 1st edition books
+					</p>
 				</div>
-				
+
 				<ul data-role="listview">
-				<li><h3>See the location of the store</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.0895371887555!2d-2.241499819606036!3d53.48472997213552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1c766f1eaa7%3A0x687a99f526f0cbe4!2sParamount+Books!5e0!3m2!1sen!2suk!4v1511355897080" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-				<br>
-                <br>
-            </ul>
-				<!-- /grid-b -->
+					<li style="text-align: center" data-role="collapsible" data-iconpos="right" data-inset="false">
+						<h3>See the location of the store</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.0895371887555!2d-2.241499819606036!3d53.48472997213552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1c766f1eaa7%3A0x687a99f526f0cbe4!2sParamount+Books!5e0!3m2!1sen!2suk!4v1511355897080"
+						 width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</li>
+				</ul>
 			</div>
 
 		</main>
-       
-        <footer data-role="footer">
+
+		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
-		
+
 	</div>
-        
-        <!---------- Store Page 7 -------------->
-		
-		<div data-role="page" id="store-7" class="page">
+
+	<!---------- Store Page 7 -------------->
+
+	<div data-role="page" id="store-7" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">
+						<a href="home.html" rel="external">
 						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -684,10 +750,14 @@
 			</section>
 			<!-- /header -->
 		</header>
-		
+
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="store-name">Blackwell</h1>
@@ -703,62 +773,66 @@
 					<div class="ui-block-a">
 						<img class="img-book-store" src="img/blackwell.jpg">
 					</div>
-					
+
 					<div class="description">
-					<p>Family owned academic, professional and specialist booksellers since 1879. First shop in Oxford now from Aberdeen to Exeter and online since 1995.</p>
+						<p>Family owned academic, professional and specialist booksellers since 1879. First shop in Oxford now from Aberdeen to
+							Exeter and online since 1995.</p>
 					</div>
-					
+
 					<div class="ui-block-b store-info">
-						<p>48-51 Broad St 
-						<br>Oxford 
-						<br>OX1 3BQ						
+						<p>48-51 Broad St
+							<br>Oxford
+							<br>OX1 3BQ
 						</p>
 					</div>
 				</div>
-				
+
 				<div class="services">
-				<p>Services
-				<br>Top Floor - Second Hand Books
-				<br>Second Floor - Rare Books Department
-				<br>Ordinance Map Making Centre
-				<br>Sections for DVDs and audiobooks
-				</p>
+					<p>Services
+						<br>Top Floor - Second Hand Books
+						<br>Second Floor - Rare Books Department
+						<br>Ordinance Map Making Centre
+						<br>Sections for DVDs and audiobooks
+					</p>
 				</div>
-				
+
 				<ul data-role="listview">
-				<li><h3>See the location of the store</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39516.70138376594!2d-1.2753351767877639!3d51.75509335442915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6af21c05bcb%3A0x998ba5c1ca8ff22f!2sBlackwell&#39;s+Bookshop!5e0!3m2!1sen!2suk!4v1511355946281" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-				<br>
-                <br>
-            </ul>
-				<!-- /grid-b -->
+					<li style="text-align: center" data-role="collapsible" data-iconpos="right" data-inset="false">
+						<h3>See the location of the store</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39516.70138376594!2d-1.2753351767877639!3d51.75509335442915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6af21c05bcb%3A0x998ba5c1ca8ff22f!2sBlackwell&#39;s+Bookshop!5e0!3m2!1sen!2suk!4v1511355946281"
+						 width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</li>
+				</ul>
 			</div>
 
 		</main>
-       
-       	<footer data-role="footer">
+
+		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
-		
+
 	</div>
-        
-        <!---------- Store Page 8 -------------->
-		
-		<div data-role="page" id="store-8" class="page">
+
+	<!---------- Store Page 8 -------------->
+
+	<div data-role="page" id="store-8" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">
+						<a href="home.html" rel="external">
 						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li class="active"><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -770,10 +844,14 @@
 			</section>
 			<!-- /header -->
 		</header>
-		
+
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="store-name">Heffer's</h1>
@@ -789,52 +867,54 @@
 					<div class="ui-block-a">
 						<img class="img-book-store" src="img/heffers.jpg">
 					</div>
-					
+
 					<div class="description">
-					<p>Heffers stocks an amazing range of books & board games, and has the best children's book department in the area. We also host events throughout the year.</p>
+						<p>Heffers stocks an amazing range of books & board games, and has the best children's book department in the area. We
+							also host events throughout the year.</p>
 					</div>
-					
+
 					<div class="ui-block-b store-info">
-						<p>20 Trinity St 
-						<br>Cambridge 
-						<br>CB2 1TY	
+						<p>20 Trinity St
+							<br>Cambridge
+							<br>CB2 1TY
 						</p>
 					</div>
 				</div>
-				
+
 				<div class="services">
-				<p>Services
-				<br>All Access
-				<br>Baby Changing Facilities
-				<br>Childrens Section
-				<br>Lift 
-				</p>
+					<p>Services
+						<br>All Access
+						<br>Baby Changing Facilities
+						<br>Childrens Section
+						<br>Lift
+					</p>
 				</div>
-				
+
 				<ul data-role="listview">
-				<li><h3>See the location of the store</h3></li>
-				<li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.0011734629124!2d0.11604948035774451!3d52.20702616722733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d870bddac85195%3A0x365a1ab929616886!2sHeffer&#39;s+Bookshop!5e0!3m2!1sen!2suk!4v1511355997505" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-				<br>
-                <br>
-            </ul>
-				<!-- /grid-b -->
+					<li style="text-align: center" data-role="collapsible" data-iconpos="right" data-inset="false">
+						<h3>See the location of the store</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.0011734629124!2d0.11604948035774451!3d52.20702616722733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d870bddac85195%3A0x365a1ab929616886!2sHeffer&#39;s+Bookshop!5e0!3m2!1sen!2suk!4v1511355997505"
+						 width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</li>
+				</ul>
 			</div>
 
 		</main>
-        
-        <footer data-role="footer">
-			<p>BLURB &copy; book stores</p>
-			<p>115 New Cavendish Street <br> London W1W 6UW</p>
-		</footer>
-		
-	</div>
-
-        <!--------- This is the footer ---------->
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
+
+	</div>
+
+	<!--------- This is the footer ---------->
+
+	<footer data-role="footer">
+		<p>BLURB &copy; book stores</p>
+		<p>115 New Cavendish Street <br> London W1W 6UW</p>
+	</footer>
 
 	</div>
 
@@ -842,6 +922,6 @@
 
 	<script src="js/main.js"></script>
 	<script src="js/stores.js"></script>
-	</body>
+</body>
 
 </html>

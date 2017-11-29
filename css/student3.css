@@ -326,12 +326,100 @@ button.goback-btn.ui-btn {
   background-color: #f1f1f1; }
 
 /* line 188, student3.scss */
-.promo {
-  background: #ccc;
-  padding: 3px; }
+#share-buttons img {
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline; }
 
-/* line 193, student3.scss */
-.expire {
-  color: red; }
+/* line 200, student3.scss */
+#share-buttons a:hover {
+  text-decoration: none; }
+
+@media only screen and (max-width: 760px) {
+  /* line 205, student3.scss */
+  .ipad-only {
+    display: none; } }
+
+/* line 211, student3.scss */
+#v {
+  width: 320px;
+  height: 240px; }
+
+/* line 216, student3.scss */
+#qr-canvas {
+  display: none; }
+
+/* line 220, student3.scss */
+#qrfile {
+  width: 320px;
+  height: 240px; }
+
+/* line 225, student3.scss */
+#mp1 {
+  text-align: center;
+  font-size: 35px; }
+
+/* line 230, student3.scss */
+#imghelp {
+  color: white;
+  position: relative;
+  left: 0px;
+  top: -190px;
+  z-index: 100;
+  font: 18px arial, sans-serif;
+  background: #0e3c62;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 20px;
+  border-radius: 20px; }
+
+/* line 244, student3.scss */
+.selector {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: -4px; }
+
+/* line 251, student3.scss */
+#outdiv {
+  width: 320px;
+  height: 240px;
+  border: solid;
+  border-width: 3px 3px 3px 3px;
+  border-color: #0e3c62; }
+
+/* line 259, student3.scss */
+.tsel {
+  padding: 0; }
+
+/* line 262, student3.scss */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #0e3c62;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite; }
+
+@media only screen and (max-width: 760px) {
+  /* line 272, student3.scss */
+  .blackwell-voucher img {
+    width: 100%; } }
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=student3.css.map */

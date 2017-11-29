@@ -1,0 +1,42 @@
+@charset "utf-8";
+.ui-block-b {
+	text-align: center;
+}
+
+.services {
+	text-align: center;
+}
+
+.description {
+	text-align: center;
+}
+
+
+.paymentmsg {
+	align-content: center;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.welcome {
+	align-content: center;
+	padding: 20px;
+}
+.welcome img {
+	width: 100%;
+}
+.welcomemsg {
+	text-align: center;
+	color: white;
+	font-family: arial;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.swipe {
+	align-content: center;
+}
+
+.booking-form {
+	text-align: left;
+}

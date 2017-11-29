@@ -185,11 +185,103 @@ button.goback-btn.ui-btn {
     background-color: #f1f1f1;
 }
 
-.promo {
-    background: #ccc;
-    padding: 3px;
+#share-buttons img {
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+  &:hover {
+    
+  }
 }
 
-.expire {
-    color: red;
+#share-buttons a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.ipad-only {
+  @include respond-to(iphone) {
+    display: none;
+  }
+}
+
+#v {
+  width: 320px;
+  height: 240px;
+}
+
+#qr-canvas {
+  display: none;
+}
+
+#qrfile {
+  width: 320px;
+  height: 240px;
+}
+
+#mp1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+#imghelp {
+  color: white;
+  position: relative;
+  left: 0px;
+  top: -190px;
+  z-index: 100;
+  font: 18px arial, sans-serif;
+  background: #0e3c62;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.selector {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: -4px;
+}
+
+#outdiv {
+  width: 320px;
+  height: 240px;
+  border: solid;
+  border-width: 3px 3px 3px 3px;
+  border-color: #0e3c62;
+}
+
+.tsel {
+  padding: 0;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #0e3c62;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.blackwell-voucher img {
+  @include respond-to(iphone) {
+    width: 100%;
+  }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

@@ -15,65 +15,6 @@
   <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   <script type="text/javascript" src="js/qrcode/webqr.js"></script>
   <script src="js/main.js"></script>
-  <style type="text/css">
-    #v {
-      width: 320px;
-      height: 240px;
-    }
-
-    #qr-canvas {
-      display: none;
-    }
-
-    #qrfile {
-      width: 320px;
-      height: 240px;
-    }
-
-    #mp1 {
-      text-align: center;
-      font-size: 35px;
-    }
-
-    #imghelp {
-      position: relative;
-      left: 0px;
-      top: -160px;
-      z-index: 100;
-      font: 18px arial, sans-serif;
-      background: #f0f0f0;
-      margin-left: 35px;
-      margin-right: 35px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-radius: 20px;
-    }
-
-    .selector {
-      margin: 0;
-      padding: 0;
-      cursor: pointer;
-      margin-bottom: -5px;
-    }
-
-    #outdiv {
-      width: 320px;
-      height: 240px;
-      border: solid;
-      border-width: 3px 3px 3px 3px;
-    }
-
-    #result {
-      border: solid;
-      border-width: 1px 1px 1px 1px;
-      padding: 20px;
-      width: 70%;
-    }
-
-    .tsel {
-      padding: 0;
-    }
-  </style>
 
 </head>
 
@@ -84,15 +25,17 @@
       <section class="navigation">
         <div class="nav-container">
           <div class="brand">
-            <a href="index.html" rel="external">
+            <a href="home.html" rel="external">
               <img src="img/mainlogo.png" alt="logo"
             width="83" height="38" border="0">
           </a>
           </div>
           <nav>
-            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <div class="nav-mobile">
+              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+            </div>
             <ul class="nav-list">
-              <li><a href="index.html" rel="external">Home</a></li>
+              <li><a href="home.html" rel="external">Home</a></li>
               <li><a href="stores.html" rel="external">Stores</a></li>
               <li><a href="news.html" rel="external">News</a></li>
               <li><a href="events.html" rel="external">Events</a></li>
@@ -107,17 +50,16 @@
 
     <main role="main" class="ui-content">
 
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+      </div>
+      
       <div class="ui-body ui-body-a ui-corner-all" id="qr-page-body">
         <div class="ui-grid-b">
           <div class="ui-block-a">
             <h1>Scan QR code</h1>
-          </div>
-          
-          <div class="ui-block-b">
-            <h1>Total Points: </h1>
-            <div>
-              
-            </div>
           </div>
         </div>
 
@@ -147,6 +89,14 @@
         </table>
       </div>
 
+        <div data-role="popup" id="qr-scanned" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+          data-tolerance="30,15" style="padding: 15px;">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <h3>QR scan successful!</h3>
+          <p>You have earnt +1 loyalty point</p>
+          <a class="ui-btn" href="loyalty.html" rel="external">Click here to see your loyalty points</a>
+        </div>
+
     </main>
 
     <canvas id="qr-canvas" width="800" height="600"></canvas>
@@ -155,6 +105,7 @@
     </script>
 
     <footer data-role="footer">
+      <a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
       <p>BLURB &copy; book stores</p>
       <p>115 New Cavendish Street <br> London W1W 6UW</p>
     </footer>

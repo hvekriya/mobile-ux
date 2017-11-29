@@ -1,16 +1,22 @@
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>BLURB</title>
 	<link rel="stylesheet" href="css/themes/Mobile-UX.min.css" />
 	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 	<link rel="stylesheet" href="css/student3.css">
+	<link rel="stylesheet" href="css/student1.css">
 
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="js/tinysort.min.js"></script>
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+	<script src="js/main.js"></script>
+
+
 </head>
 
 <body>
@@ -19,16 +25,18 @@
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
-					<div class="logo">
-						<a href="index.html" rel="external">
-						<img src="img/mainlogo.png" alt="logo"
+					<div class="brand">
+						<a href="home.html" rel="external">
+						<img src="img/mainlogo.png" alt="brand"
 						width="83" height="38" border="0">
 						</a>
 					</div>
 					<nav>
-						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+						<div class="nav-mobile">
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -39,81 +47,67 @@
 				</div>
 			</section>
 		</header>
-		
-<body>
-<form action="https://www.paypal.com" method="post" target="_top">
-<input type="text" placeholder="Full Name"><br>
-<input type="text" placeholder="Address"><br>
-<input type="text" placeholder="Email"><br>
 
-<!--- This is the payment caluclation --->
+		<main role="main" class="ui-content">
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
+			<div class="i-body ui-body-a ui-corner-all loyalty booking-form">
+				<form id="frmBooking" name="bookingForm" action="post" action="_self">
 
-<label for="quantityChildren">Children quantity</label>
-<input class="select-control" id="quantityChildren">
+					<h3>Event Details</h3>
+					<p id="event_name">Ticket for bla</p>
+					<p id="event_description">Address Bla</p>
 
-<label for="quantityAdult">Adult quantity</label>
-<input class="select-control" id="quantityAdult">
+					<h3>Personal Details</h3>
+					<input type="text" placeholder="Full Name"><br>
+					<input type="text" placeholder="Address"><br>
 
-<label for="quantityOAP">OAP quantity</label>
-<input class="select-control" id="quantityOAP">
+					<!-- This is the payment caluclation -->
+					<h3>Tickets</h3>
+					<label for="quantityAdult">Adult Quantity</label>
+					<label for="adultprice">£ <span id="adult_price">Price £5.00</span></label>
+					<input class="select-control" id="quantityAdult">
 
-<div style="display: none" class="summary">
-	<h3>Summary</h3>
-	<p>Children Total: £<span class="childrenTotal"></span></p>
-	<p>Adult Total: £<span class="adultTotal"></span></p>
-	<p>OAP Total: £<span class="oapTotal"></span></p>
-	<p>Total: £<span class="total"></span></p>
-</div>
+					<label for="quantityChildren">Children Quantity</label>
+					<label for="childrenprice">£ <span id="children_price">Price £3.50</span></label>
+					<input class="select-control" id="quantityChildren">
 
-	<button type="submit">Proceed to payment now</button>
-	
-	
-    <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Proceed to payment</a>
-    <div data-role="popup" id="popupBasic">
-    <img src="img/tick.png" alt=icon height="20px" width="20px"><p>Successful!
-    <br>You successfully booked the event. 
-    <br>You will recieve an email in your inbox shortly with the reciept. Keep this safe as it will be required at the event.
-    </p>
-    </div>
-    
-</form>
-		
-		
+					<label for="quantityOAP">OAP Quantity</label>
+					<label for="oapprice">£ <span id="oap_price">Price £2.50</span></label>
+					<input class="select-control" id="quantityOAP">
+
+					<div style="display: none" class="summary">
+						<div class="summmary">
+							<h3>Summary</h3>
+							<p>Adult Total: £<span class="adultTotal"></span></p>
+							<p>Children Total: £<span class="childrenTotal"></span></p>
+							<p>OAP Total: £<span class="oapTotal"></span></p>
+							<p>Total: £<span class="total" id="total_value"></span></p>
+						</div>
+					</div>
+					<button id="customButton">Purchase</button>
+				</form>
+				<!--- Stripe Payment -->
+				<br>
+				<div align="center" id="thankyouPayment"> </div>
+			</div>
+		</main>
+
+		<!--- Footer -->
+
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
-</div>
+	</div>
 
-<script>
+	<!--- Script -->
 
-    $(".select-control").change(function() {
-    var totalChildren = 0;
-	var priceChildren = 2.50;
-    var totalAdult = 0;
-	var priceAdult = 2.50;
-	var totalOAP = 0;
-	var priceOAP = 2.50;
-	var total = 0;
-	
-      $("#quantityChildren").each(function() {
-          totalChildren += parseInt(this.value)||0;
-		  $('.childrenTotal').html(totalChildren*priceChildren)
-      });
-      $("#quantityAdult").each(function() {
-          totalAdult += parseInt(this.value)||0;
-		  $('.adultTotal').html(totalAdult*priceAdult)
-      });
-      $("#quantityOAP").each(function() {
-          totalOAP += parseInt(this.value)||0;
-		  $('.oapTotal').html(totalOAP*priceOAP)
-      });
-	$('.total').html(totalChildren*priceChildren + totalAdult*priceAdult + totalOAP*priceOAP)
-	$('.summary').show()
-    });
-
-
-</script>
-
+	<script src="js/booking.js"></script>
 </body>
+
 </html>

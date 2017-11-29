@@ -16,21 +16,21 @@
 
 <body>
 
-	<div id ="aboutus" data-role="page">
+	<div id="aboutus" data-role="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
-          <div class="brand">
-            <a href="index.html" rel="external">
+					<div class="brand">
+						<a href="home.html" rel="external">
               <img src="img/mainlogo.png" alt="logo"
             width="83" height="38" border="0">
           </a>
-          </div>
+					</div>
 					<nav>
 						<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
-							<li ><a href="stores.html" rel="external">Stores</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
+							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
 							<li class="active"><a href="about.html" rel="external">About</a></li>
@@ -43,6 +43,12 @@
 		</header>
 
 		<main role="main" class="ui-content">
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+			</div>
+
 			<h1>Team Members</h1>
 
 			<div class="ui-body ui-body-a ui-corner-all">
@@ -73,14 +79,14 @@
 			<div class="ui-body ui-body-a ui-corner-all students">
 				<ul data-role="listview" data-inset="true" data-filter="true" class="students-list">
 					<li>
-						<a href="#student1" rel=""> 
+						<a href="#student1" data-transition="pop" rel=""> 
 							<img class="img ipad" src="img/s1.png">  
 							<h2>Calvin Keesoony, 20</h2>
 							<p>Level 6, Multimedia Computing Student</p>
 							<p class="location">Chingford</p>
 						</a>
 					</li>
-					<li><a href="#student2"> 
+					<li><a href="#student2" data-transition="pop"> 
 							<img class="img ipad" src="img/s2.png">  
 							<h2>Sam Collins, 21</h2>
 							<p>Level 6, Multimedia Computing Student</p>
@@ -88,7 +94,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#student3"> 
+						<a href="#student3" data-transition="pop"> 
 							<img class="img ipad" src="img/s3.png">  
 							<h2>Haresh Vekryia, 22</h2>
 							<p>Level 6, Multimedia Computing Student</p>
@@ -96,46 +102,55 @@
 						</a>
 					</li>
 					<li>
-						<a href="#student4"> 
+						<a href="#student4" data-transition="pop"> 
 							<img class="img ipad" src="img/s4.png">  
 							<h2>Madalina Voiniciuc, 22</h2>
 							<p>Level 6, Multimedia Computing Student</p>
 							<p class="location">Stanmore</p>
 						</a>
 					</li>
-					
+
 				</ul>
 			</div>
 			<br>
-					<h3 id="about-us-header" >About Us</h3>
-			<p style="width: 98%; text-align: justify;">We are a group of 4 students from University of Westminster, trying to develop a mobile web application to promote products included in the book retailer’s portfolio in close proximity to them, events, talks, reading sessions, interest groups meetings, children parties etc. This is a group project representing the coursework for "Mobile User Experience" module.</p>
-				
-				
+			<h3 id="about-us-header">About Us</h3>
+			<p style="width: 98%; text-align: justify;">We are a group of 4 students from University of Westminster, trying to develop a mobile web application to promote products
+				included in the book retailer’s portfolio in close proximity to them, events, talks, reading sessions, interest groups
+				meetings, children parties etc. This is a group project representing the coursework for "Mobile User Experience" module.</p>
+
+
 			<div class="ui-grid-a">
-				
+
 				<div class="ui-block-a" style="width: 49%;">
 					<h3>Our Mission</h3>
-					<p style="text-align: justify;"> Our aim is to familiarise customers with the products the book retailers offers in stores near to them, encourage customers to visit the stores and share their experiences with others. </p>	
+					<p style="text-align: justify;"> Our aim is to familiarise customers with the products the book retailers offers in stores near to them, encourage customers
+						to visit the stores and share their experiences with others. </p>
 				</div><br>
 				<div class="ui-block-b" style="width: 46%; margin-left: 3%">
 					<h3>Why Us?</h3>
-					<p style="text-align: justify;">We encourage a loyalty initiative that encourages customers to advocate and engage more with the products included in the book retailers portfolio on a repeat basis.</p>	
+					<p style="text-align: justify;">We encourage a loyalty initiative that encourages customers to advocate and engage more with the products included in
+						the book retailers portfolio on a repeat basis.</p>
 				</div>
 			</div>
 			<ul data-role="listview">
-				
-                <li style="text-align: center"><iframe class="video" width="100%" src="https://www.youtube.com/watch?v=BaauU5K_gBo" frameborder="0" allowfullscreen></iframe></li>
-                  <li><h3 style="text-align: center;">Multimedia and Games Computing at University of Westminster</h3></li>
-                <br>
-				  <br>
-				 
-            </ul>
-			
+
+				<li style="text-align: center">
+					<iframe class="video" width="100%" src="https://www.youtube.com/embed/BaauU5K_gBo" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<li>
+					<h3 style="text-align: center;">Multimedia and Games Computing at University of Westminster</h3>
+				</li>
+				<br>
+				<br>
+
+			</ul>
+
 			<!-- /grid-a -->
-			
+
 		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
@@ -149,14 +164,14 @@
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
 						<div class="nav-mobile">
-              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
-            </div>
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -170,85 +185,96 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+      </div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="student-name" style="color: #0e3c62">Calvin Keesoony, 20</h1>
 				</div>
-			
+
 				<div class="ui-block-b">
-          <a class="ui-btn add-fav-btn" href="#student1-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
-          <a class="ui-btn remove-fav-btn" style="display:none;" href="#student1-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
-        </div>
-        <div data-role="popup" id="student1-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Added to favourites</h3>
-          <p>You have successfully added this student to favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-      <div data-role="popup" id="student1-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Removed from favourites</h3>
-          <p>You have successfully removed this student from favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
+					<a class="ui-btn add-fav-btn" href="#student1-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;" href="#student1-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+				</div>
+				<div data-role="popup" id="student1-add-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Added to favourites</h3>
+					<p>You have successfully added this student to favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+				<div data-role="popup" id="student1-remove-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Removed from favourites</h3>
+					<p>You have successfully removed this student from favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
 			</div>
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
 					<div class="ui-block-a">
-						<img class="img-book-store" src="img/s1.png">
+						<img class="img-book-store" src="img/s1b.png">
 					</div>
 					<div class="ui-block-b store-info" style="width: 600px;">
-						
+
 						<h5 id="question" style="font-size: 16px">What's your favourite aspect about studying Multimedia Computing?</h5>
-			<p style="font-size: 14px">The design aspect such as websites.</p>
+						<p style="font-size: 14px">The design aspect such as websites.</p>
 						<h5 id="question" style="font-size: 16px">Have you always wanted to be a web designer / developer?</h5>
-			<p style="font-size: 14px">Yes, since college.</p>
+						<p style="font-size: 14px">Yes, since college.</p>
 						<h5 id="question" style="font-size: 16px">Favourite color?</h5>
-			<p style="font-size: 14px">Navy.</p>
-				  <h5 id="question" style="font-size: 16px">What do you enjoy doing outside the university?</h5>
-			<p style="font-size: 14px">Gaming.</p>
-				  <h5 id="question" style="font-size: 16px">What's your favourite food?</h5>
-			<p style="font-size: 14px">French Fries.</p>
+						<p style="font-size: 14px">Navy.</p>
+						<h5 id="question" style="font-size: 16px">What do you enjoy doing outside the university?</h5>
+						<p style="font-size: 14px">Gaming.</p>
+						<h5 id="question" style="font-size: 16px">What's your favourite food?</h5>
+						<p style="font-size: 14px">French Fries.</p>
 					</div>
 				</div>
 
 				<!-- /grid-b -->
 			</div>
-			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p> 
+			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p>
 			<br>
+
 			<ul data-role="listview">
-				  <li><h3 style="text-align: center;">See my location on Google Maps</h3></li>
-                <li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-                <br>
-				  <br>
-				 
-            </ul>
+			
+				<li style="text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+				
+					<h2>Click to see my location on Google Maps</h2>
+				
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442"
+					 width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</li>
+			</ul>
 
 		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
 
 	</div>
-	
+
 	<!-- Student 2 page -->
-<div data-role="page" id="student2" class="page">
+	<div data-role="page" id="student2" class="page">
 		<header data-role="header" style="overflow:hidden;">
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
 						<div class="nav-mobile">
-              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
-            </div>
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -262,64 +288,76 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+      </div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="student-name" style="color: #0e3c62">Sam Collins, 21</h1>
 				</div>
 				<div class="ui-block-b">
-          <a class="ui-btn add-fav-btn" href="#student2-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
-          <a class="ui-btn remove-fav-btn" style="display:none;" href="#student2-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
-        </div>
-        <div data-role="popup" id="student2-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Added to favourites</h3>
-          <p>You have successfully added this student to favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-      <div data-role="popup" id="student2-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Removed from favourites</h3>
-          <p>You have successfully removed this student from favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
+					<a class="ui-btn add-fav-btn" href="#student2-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;" href="#student2-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+				</div>
+				<div data-role="popup" id="student2-add-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Added to favourites</h3>
+					<p>You have successfully added this student to favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+				<div data-role="popup" id="student2-remove-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Removed from favourites</h3>
+					<p>You have successfully removed this student from favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
 			</div>
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
 					<div class="ui-block-a">
-						<img class="img-book-store" src="img/s2.png">
+						<img class="img-book-store" src="img/s2b.png">
 					</div>
 					<div class="ui-block-b store-info" style="width: 600px;">
-						
+
 						<h5 id="question" style="font-size: 16px">What's your favourite aspect about studying Multimedia Computing?</h5>
-			<p style="font-size: 14px">My favourite aspect of Multimedia Computing is the design/creative aspect of the course, allowing me to express myself freely and bring my ideas and concepts I have in my mind to the forefront, expressing them through the work I produce.</p>
+						<p style="font-size: 14px">My favourite aspect of Multimedia Computing is the design/creative aspect of the course, allowing me to express myself
+							freely and bring my ideas and concepts I have in my mind to the forefront, expressing them through the work I produce.</p>
 						<h5 id="question" style="font-size: 16px">Have you always wanted to be a web designer / developer?</h5>
-			<p style="font-size: 14px">Not initially.</p>
+						<p style="font-size: 14px">Not initially.</p>
 						<h5 id="question" style="font-size: 16px">Favourite color?</h5>
-			<p style="font-size: 14px">Blue is hands down my favourite colour. Specifically, Royal Blue is my favourite variant of blue.</p>
-				  <h5 id="question" style="font-size: 16px">What do you enjoy doing outside the university?</h5>
-			<p style="font-size: 14px">Outside of University, I'm usually doing one of four things, Gaming, Playing Guitar, Playing cricket in the summer for my local club back in Essex, or out socialising with various friends in a variety of activities.</p>
-				  <h5 id="question" style="font-size: 16px">What's your favourite food?</h5>
-			<p style="font-size: 14px"> Pizza. Is there any other answer to this question? </p>
+						<p style="font-size: 14px">Blue is hands down my favourite colour. Specifically, Royal Blue is my favourite variant of blue.</p>
+						<h5 id="question" style="font-size: 16px">What do you enjoy doing outside the university?</h5>
+						<p style="font-size: 14px">Outside of University, I'm usually doing one of four things, Gaming, Playing Guitar, Playing cricket in the summer
+							for my local club back in Essex, or out socialising with various friends in a variety of activities.</p>
+						<h5 id="question" style="font-size: 16px">What's your favourite food?</h5>
+						<p style="font-size: 14px"> Pizza. Is there any other answer to this question? </p>
 					</div>
 				</div>
 
 				<!-- /grid-b -->
 			</div>
-			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p> 
+			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p>
 			<br>
 			<ul data-role="listview">
-				  <li><h3 style="text-align: center;">See my location on Google Maps</h3></li>
-                <li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-                <br>
-				  <br>
+			
+				<li style="text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
 				
-            </ul>
+					<h2>Click to see my location on Google Maps</h2>
+				
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442"
+					 width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</li>
+			</ul>
 
 		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
@@ -332,14 +370,14 @@
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
 						<div class="nav-mobile">
-              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
-            </div>
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -353,64 +391,74 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+      </div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="student-name" style="color: #0e3c62">Haresh Vekryia, 22</h1>
 				</div>
 				<div class="ui-block-b">
-          <a class="ui-btn add-fav-btn" href="#student3-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
-          <a class="ui-btn remove-fav-btn" style="display:none;" href="#student3-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
-        </div>
-        <div data-role="popup" id="student3-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Added to favourites</h3>
-          <p>You have successfully added this student to favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-      <div data-role="popup" id="student3-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Removed from favourites</h3>
-          <p>You have successfully removed this student from favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
+					<a class="ui-btn add-fav-btn" href="#student3-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;" href="#student3-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+				</div>
+				<div data-role="popup" id="student3-add-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Added to favourites</h3>
+					<p>You have successfully added this student to favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+				<div data-role="popup" id="student3-remove-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Removed from favourites</h3>
+					<p>You have successfully removed this student from favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
 			</div>
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
 					<div class="ui-block-a">
-						<img class="img-book-store" src="img/s3.png">
+						<img class="img-book-store" src="img/s3b.png">
 					</div>
 					<div class="ui-block-b store-info" style="width: 600px;">
-						
+
 						<h5 id="question" style="font-size: 16px">What's your favourite aspect about studying Multimedia Computing?</h5>
-			<p style="font-size: 14px">My favourite aspect about studying multimedia computing is learning new skills and technologies.</p>
+						<p style="font-size: 14px">My favourite aspect about studying multimedia computing is learning new skills and technologies.</p>
 						<h5 id="question" style="font-size: 16px">Why do you think employers should choose to hire you after the graduation?</h5>
-			<p style="font-size: 14px">I am great at what I do and I have great team working skills which would be very valuable to employers.</p>
+						<p style="font-size: 14px">I am great at what I do and I have great team working skills which would be very valuable to employers.</p>
 						<h5 id="question" style="font-size: 16px">What's your favourite drink?</h5>
-			<p style="font-size: 14px">Water.</p>
-				  <h5 id="question" style="font-size: 16px">What do you enjoy doing outside the university?</h5>
-			<p style="font-size: 14px">Playing Xbox and football.</p>
-				  <h5 id="question" style="font-size: 16px">what is your dream holiday destination and why?</h5>
-			<p style="font-size: 14px">I don't have a specific destination. I want to travel the whole world.</p>
+						<p style="font-size: 14px">Water.</p>
+						<h5 id="question" style="font-size: 16px">What do you enjoy doing outside the university?</h5>
+						<p style="font-size: 14px">Playing Xbox and football.</p>
+						<h5 id="question" style="font-size: 16px">what is your dream holiday destination and why?</h5>
+						<p style="font-size: 14px">I don't have a specific destination. I want to travel the whole world.</p>
 					</div>
 				</div>
 
 				<!-- /grid-b -->
 			</div>
-			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p> 
+			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p>
 			<br>
 			<ul data-role="listview">
-				  <li><h3 style="text-align: center;">See my location on Google Maps</h3></li>
-                <li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-                <br>
-				  <br>
+			
+				<li style="text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
 				
-            </ul>
+					<h2>Click to see my location on Google Maps</h2>
+				
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442"
+					 width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</li>
+			</ul>
 
 		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
@@ -423,14 +471,14 @@
 			<section class="navigation">
 				<div class="nav-container">
 					<div class="brand">
-						<a href="index.html" rel="external">BLURB</a>
+						<a href="home.html" rel="external">BLURB</a>
 					</div>
 					<nav>
 						<div class="nav-mobile">
-              <button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
-            </div>
+							<button class="goback-btn ui-btn" onclick="goBack()">Go Back</button>
+						</div>
 						<ul class="nav-list">
-							<li><a href="index.html" rel="external">Home</a></li>
+							<li><a href="home.html" rel="external">Home</a></li>
 							<li><a href="stores.html" rel="external">Stores</a></li>
 							<li><a href="news.html" rel="external">News</a></li>
 							<li><a href="events.html" rel="external">Events</a></li>
@@ -444,64 +492,78 @@
 		</header>
 
 		<main role="main" class="ui-content">
-
+			<div class="ui-grid-a ipad-only">
+				<div class="ui-block-c">
+					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+				</div>
+      </div>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<h1 class="student-name" style="color: #0e3c62">Madalina Voiniciuc, 22</h1>
 				</div>
 				<div class="ui-block-b">
-          <a class="ui-btn add-fav-btn" href="#student4-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
-          <a class="ui-btn remove-fav-btn" style="display:none;" href="#student4-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
-        </div>
-        <div data-role="popup" id="student4-add-fav-1" class="photopopup" data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Added to favourites</h3>
-          <p>You have successfully added this student to favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
-      <div data-role="popup" id="student4-remove-fav-1" class="photopopup"data-transition="pop"  data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>Removed from favourites</h3>
-          <p>You have successfully removed this student from favourites</p>
-          <a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
-      </div>
+					<a class="ui-btn add-fav-btn" href="#student4-add-fav-1" data-rel="popup" data-position-to="window">Add to favourites</a>
+					<a class="ui-btn remove-fav-btn" style="display:none;" href="#student4-remove-fav-1" data-rel="popup" data-position-to="window">Remove from favourites</a>
+				</div>
+				<div data-role="popup" id="student4-add-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Added to favourites</h3>
+					<p>You have successfully added this student to favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
+				<div data-role="popup" id="student4-remove-fav-1" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Removed from favourites</h3>
+					<p>You have successfully removed this student from favourites</p>
+					<a class="ui-btn" href="fav.html" rel="external">Click here to see your favourites</a>
+				</div>
 			</div>
 			<!-- /grid-a -->
 			<div>
 				<div class="ui-grid-b">
 					<div class="ui-block-a">
-						<img class="img-book-store" src="img/s4.png">
+						<img class="img-book-store" src="img/s4b.png">
 					</div>
 					<div class="ui-block-b store-info" style="width: 600px;">
-					
+
 						<h5 id="question" style="font-size: 16px">What's your favourite aspect about studying abroad?</h5>
-			<p style="font-size: 14px">Meeting new people, making friends and enjoying experiences I’d never had before. At the moment this country offered me more opportunities than my country could, so aspects like picking up the international skills to gain a decent graduate job, gaining independence, learning self-reliance or brushing up on my language skills would tip the balance in favour of living abroad for a few years even if it could become the toughest experience at some stage.</p>
+						<p style="font-size: 14px">Meeting new people, making friends and enjoying experiences I’d never had before. At the moment this country offered
+							me more opportunities than my country could, so aspects like picking up the international skills to gain a decent
+							graduate job, gaining independence, learning self-reliance or brushing up on my language skills would tip the balance
+							in favour of living abroad for a few years even if it could become the toughest experience at some stage.</p>
 						<h5 id="question" style="font-size: 16px">Have you always wanted to be a web designer?</h5>
-			<p style="font-size: 14px">No. It was good fortune to be here at the registration time and get accepted. Cabin crew was my dream job. </p>
+						<p style="font-size: 14px">No. It was good fortune to be here at the registration time and get accepted. Cabin crew was my dream job. </p>
 						<h5 id="question" style="font-size: 16px">Where do you see yourself in 5 years time?</h5>
-			<p style="font-size: 14px">In Romania. Working for a british company:)). </p>
-				  <h5 id="question" style="font-size: 16px">What do you enjoy doing outside the university?</h5>
-			<p style="font-size: 14px">I enjoy taking pictures, reading and walking, but it's a busy period for me and I prefer working on my portofolio when I have some spare time.</p>
-				  <h5 id="question" style="font-size: 16px">What's your favourite movie?</h5>
-			<p style="font-size: 14px">Law abiding citizen. The stoning of Soraya M. Mostly dramas and psychological movies. </p>
+						<p style="font-size: 14px">In Romania. Working for a british company:)). </p>
+						<h5 id="question" style="font-size: 16px">What do you enjoy doing outside the university?</h5>
+						<p style="font-size: 14px">I enjoy taking pictures, reading and walking, but it's a busy period for me and I prefer working on my portofolio when
+							I have some spare time.</p>
+						<h5 id="question" style="font-size: 16px">What's your favourite movie?</h5>
+						<p style="font-size: 14px">Law abiding citizen. The stoning of Soraya M. Mostly dramas and psychological movies. </p>
 					</div>
 				</div>
 
 				<!-- /grid-b -->
 			</div>
-			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p> 
+			<p style="text-align: center; margin-top: 10%;">Full-time Student. Interested in game development. Skilled in HTML, CSS and PHP.</p>
 			<br>
 			<ul data-role="listview">
-				  <li><h3 style="text-align: center;">See my location on Google Maps</h3></li>
-                <li style="text-align: center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></li>
-                <br>
-				  <br>
 			
-            </ul>
+				<li style="text-align: center;" data-role="collapsible" data-iconpos="right" data-inset="false">
+				
+					<h2>Click to see my location on Google Maps</h2>
+				
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.598228964845!2d-0.14326768386036337!3d51.52058657963734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad602153b7d%3A0x7cae57b547cdf178!2sUniversity+of+Westminster!5e0!3m2!1sen!2suk!4v1510796852442"
+					 width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</li>
+			</ul>
 
 		</main>
 
 		<footer data-role="footer">
+			<a href="loyalty.html" rel="external" class="ui-btn"> Go to loyalty rewards section</a>
 			<p>BLURB &copy; book stores</p>
 			<p>115 New Cavendish Street <br> London W1W 6UW</p>
 		</footer>
