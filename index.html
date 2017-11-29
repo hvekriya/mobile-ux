@@ -1,4 +1,5 @@
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,43 +9,46 @@
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/student3.css">
-    <link rel="stylesheet" href="css/student1.css">
+	<link rel="stylesheet" href="css/student1.css">
 
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script>
-        $(document).on('pagecreate', function (evt) {
-            $("#landingPage").on("swiperight", function (e) {
-				window.location.href="home.html";
-            });
-			
+	<script>
+		$(document).on('pagecreate', function (evt) {
+			$("#landingPage").on("swiperight", function (e) {
+				$('#homePage').addClass('animated fadeInRight').removeClass('fadeIn')
+				window.location.href = "home.html";
+			});
+
 			$("#landingPage").on("swipeleft", function (e) {
-				window.location.href="home.html";
-            });
+				$('#homePage').addClass('animated fadeInLeft').removeClass('fadeIn')
+				window.location.href = "home.html";
+			});
 
-        });
+		});
+	</script>
 
-    </script>
-	
 </head>
+
 <body>
 	<div id="landingPage" data-role="page" style="background-color:#0A3B63">
-	<div class="welcome">
-	<img class="animated fadeInDown" src="img/mainlogo.png">
-	</div>
+		<div class="welcome">
+			<img class="animated fadeInDown" src="img/mainlogo.png">
+		</div>
 
 
-	<div class="welcomemsg">
-	<h1 class="animated fadeIn">Welcome!</h1>
-	<p class="animated fadeIn">This is our book app. 
-	The app allows users to view bookstores, events and news. They can also scan a QR code to collect loyalty points.	
-	<br><br>Swipe left or right to access the homepage.
-	</p>
+		<div class="welcomemsg">
+			<h1 class="animated fadeIn">Welcome!</h1>
+			<p class="animated fadeIn">This is our book app. The app allows users to view bookstores, events and news. They can also scan a QR code to collect
+				loyalty points.
+				<br><br>Swipe left or right to access the homepage.
+			</p>
+		</div>
+
+		<div class="swipe">
+			<center><img class="animated pulse infinite" src="img/swipe.png" alt="swiped" width="60px" height="60px"></center>
+		</div>
 	</div>
-   
-    <div class="swipe">     
-	<center><img class="animated pulse infinite" src="img/swipe.png" alt="swiped" width="60px" height="60px"></center>
-	</div>
-	</div>      
 </body>
+
 </html>
