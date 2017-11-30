@@ -107,7 +107,7 @@ function read (a) {
 }
 
 function addLoyaltyPoints () {
-  if (sessionStorage.getItem('loyaltyPoints')) {
+  if (sessionStorage.getItem('loyaltyPoints') && sessionStorage.getItem('loyaltyPoints') < 3) {
     var loyaltyPoints = parseInt(sessionStorage.getItem('loyaltyPoints')) + 1
     sessionStorage.setItem('loyaltyPoints', loyaltyPoints)
   } else {
