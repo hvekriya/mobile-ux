@@ -73,10 +73,11 @@ $('.sendEmail').click(function (event) {
   Email.send('w1497109@my.westminster.ac.uk',
     $('#email').val(),
     'Favourites List',
-    $("html").html(),
-    {token: 'bc296314-2062-48ef-ade3-e9cc38cad316'},
-    function done (message) {
-      $('.email').html('Email sent to:' + $('#email').val())
-      $('#email-sent').popup('open')
+    $('html').html(),
+    {token: 'bc296314-2062-48ef-ade3-e9cc38cad316',
+      callback: function done (message) {
+        $('.email').html('Email sent to:' + $('#email').val())
+        $('#email-sent').popup('open')
+      }
     })
 })
