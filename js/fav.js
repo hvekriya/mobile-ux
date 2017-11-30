@@ -34,33 +34,47 @@ if (localStorage.length == 0) {
 }
 
 function getMailBody () {
+
+  var body = ''
+
   for (var i = 0; i < localStorage.length; i++) {
-    return localStorage.getItem(localStorage.key(i))
+    if (localStorage.key(i).includes('news')) {
+        body =+
+        '<h1>News</h1>'
+        '<ul data-role="listview" data-inset="true"> ' +
+        '<li><a href="' + localStorage.key(i) + '" rel="external">' + localStorage.getItem(localStorage.key(i)) + '</a></li>' +
+        '</ul>'
+    } else if (localStorage.key(i).includes('about')) {
+        body =+
+        '<h1>About</h1>'
+        '<ul data-role="listview" data-inset="true"> ' +
+        '<li><a href="' + localStorage.key(i) + '" rel="external">' + localStorage.getItem(localStorage.key(i)) + '</a></li>' +
+        '</ul>'
+    } else if (localStorage.key(i).includes('events')) {
+        body =+
+        '<h1>Events</h1>'
+        '<ul data-role="listview" data-inset="true"> ' +
+        '<li><a href="' + localStorage.key(i) + '" rel="external">' + localStorage.getItem(localStorage.key(i)) + '</a></li>' +
+        '</ul>'
+    } else if (localStorage.key(i).includes('stores')) {
+        body =+
+        '<h1>Stores</h1>'
+        '<ul data-role="listview" data-inset="true"> ' +
+        '<li><a href="' + localStorage.key(i) + '" rel="external">' + localStorage.getItem(localStorage.key(i)) + '</a></li>' +
+        '</ul>'
+    }
   }
+  return body
 }
 
 $('.sendEmail').click(function (event) {
-  // var email = $('#email').val()
-  // var subject = 'Favourite List'
-  // var emailBody = 'Hi,' + 'Regards, BLURB'
-  // document.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody
-
-  // var data = {
-  //   email: $('#email').val(),
-  //   message: getMailBody()
-  // }
-  // $.ajax({
-  //   type: 'POST',
-  //   url: 'email.php',
-  //   data: data,
-  //   success: function () {
-  //     alert('Success')
-  //   }
-  // })
-
   Email.send('w1497109@my.westminster.ac.uk',
     $('#email').val(),
     'Favourites List',
     getMailBody(),
-    {token: 'bc296314-2062-48ef-ade3-e9cc38cad316'})
+    {token: 'bc296314-2062-48ef-ade3-e9cc38cad316'},
+    function done (message) {
+        $('.email').html('Email sent to:' + $('#email').val())
+        $( "#emai-send" ).popup( "open" );
+    })
 })
