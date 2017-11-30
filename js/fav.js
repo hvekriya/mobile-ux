@@ -34,7 +34,7 @@ if (localStorage.length == 0) {
 }
 
 $('.sendEmail').click(function (event) {
-  Email.send('blurb@info.com',
+  Email.send('w1497109@my.westminster.ac.uk',
     $('#email').val(),
     'Favourites List',
     $('.fav').html(),
