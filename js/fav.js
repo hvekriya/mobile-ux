@@ -75,6 +75,6 @@ $('.sendEmail').click(function (event) {
     {token: 'bc296314-2062-48ef-ade3-e9cc38cad316'},
     function done (message) {
         $('.email').html('Email sent to:' + $('#email').val())
-        $( "#emai-send" ).popup( "open" );
+        $( "#emai-sent" ).popup( "open" );
     })
 })
