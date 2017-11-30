@@ -421,5 +421,8 @@ button.goback-btn.ui-btn {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+/* line 289, student3.scss */
+.error-message {
+  color: red; }
 
 /*# sourceMappingURL=student3.css.map */
