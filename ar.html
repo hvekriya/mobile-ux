@@ -50,12 +50,12 @@
 
     <main role="main" class="ui-content">
 
-			<div class="ui-grid-a ipad-only">
-				<div class="ui-block-c">
-					<a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
-				</div>
+      <div class="ui-grid-a ipad-only">
+        <div class="ui-block-c">
+          <a class="goback-btn ui-btn ui-shadow ui-icon-arrow-l ui-btn-icon-left" onclick="goBack()" data-direction="reverse">Go Back</a>
+        </div>
       </div>
-      
+
       <div class="ui-body ui-body-a ui-corner-all" id="qr-page-body">
         <div class="ui-grid-b">
           <div class="ui-block-a">
@@ -89,13 +89,21 @@
         </table>
       </div>
 
-        <div data-role="popup" id="qr-scanned" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
-          data-tolerance="30,15" style="padding: 15px;">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <h3>QR scan successful!</h3>
-          <p>You have earnt +1 loyalty point</p>
-          <a class="ui-btn" href="loyalty.html" rel="external">Click here to see your loyalty points</a>
-        </div>
+      <div data-role="popup" id="qr-scanned" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+        data-tolerance="30,15" style="padding: 15px;">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <h3>QR scan successful!</h3>
+        <p>You have earnt +1 loyalty point</p>
+        <a class="ui-btn" href="loyalty.html" rel="external">Click here to see your loyalty points</a>
+      </div>
+
+      <div data-role="popup" id="qr-max" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+        data-tolerance="30,15" style="padding: 15px;">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <h3>You have maximum QR points</h3>
+        <p>You have maximum QR points. Please claim the voucher to reset the points</p>
+        <a class="ui-btn" href="loyalty.html" rel="external">Click here to see your loyalty points</a>
+      </div>
 
     </main>
 

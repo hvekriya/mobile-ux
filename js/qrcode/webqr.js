@@ -110,7 +110,9 @@ function addLoyaltyPoints () {
   if (sessionStorage.getItem('loyaltyPoints') && sessionStorage.getItem('loyaltyPoints') < 3) {
     var loyaltyPoints = parseInt(sessionStorage.getItem('loyaltyPoints')) + 1
     sessionStorage.setItem('loyaltyPoints', loyaltyPoints)
-  } else {
+  } else if (sessionStorage.getItem('loyaltyPoints') > 3 ) {
+    $( "#qr-max" ).popup( "open" );
+  }else {
     sessionStorage.setItem('loyaltyPoints', '1')
   }
 }
