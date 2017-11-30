@@ -65,8 +65,8 @@ function getMailBody () {
         '</ul>'
       }
     }
-    return body
   }
+  return body
 }
 
 $('.sendEmail').click(function (event) {
