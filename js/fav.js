@@ -45,16 +45,22 @@ $('.sendEmail').click(function (event) {
   // var emailBody = 'Hi,' + 'Regards, BLURB'
   // document.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody
 
-  var data = {
-    email: $('#email').val(),
-    message: getMailBody()
-  }
-  $.ajax({
-    type: 'POST',
-    url: 'email.php',
-    data: data,
-    success: function () {
-      alert('Success')
-    }
-  })
+  // var data = {
+  //   email: $('#email').val(),
+  //   message: getMailBody()
+  // }
+  // $.ajax({
+  //   type: 'POST',
+  //   url: 'email.php',
+  //   data: data,
+  //   success: function () {
+  //     alert('Success')
+  //   }
+  // })
+
+  Email.send('w1497109@my.westminster.ac.uk',
+    $('#email').val(),
+    'Favourites List',
+    getMailBody(),
+    {token: 'bc296314-2062-48ef-ade3-e9cc38cad316'})
 })
