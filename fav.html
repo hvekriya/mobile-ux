@@ -71,11 +71,12 @@
 
       <div class="ui-body ui-body-a ui-corner-all">
         <h3>Email favourites list</h3>
-        <form method="POST">
+        <form method="get">
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" value=""></input>
-          <input class="ui-btn sendEmail" type="submit" name="send" value="Send now" />
+          <!-- <input class="ui-btn sendEmail" type="submit" name="send" value="Send now" /> -->
         </form>
+        <button type="ui-btn" class="sendEmail" id="email">Send Now</button>
       </div>
 
 
