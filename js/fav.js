@@ -41,25 +41,25 @@ function getMailBody () {
     for (var i = 0; i < localStorage.length; i++) {
       if (localStorage.key(i).includes('news')) {
         body +=
-          '<h1>News</h1>'
+          '<h1>News</h1>' +
         '<ul data-role="listview" data-inset="true"> ' +
         '<li><a href="' + localStorage.key(i) + '" rel="external">' + localStorage.getItem(localStorage.key(i)) + '</a></li>' +
         '</ul>'
       } else if (localStorage.key(i).includes('about')) {
         body +=
-          '<h1>About</h1>'
+          '<h1>About</h1>' +
         '<ul data-role="listview" data-inset="true"> ' +
         '<li><a href="' + localStorage.key(i) + '" rel="external">' + localStorage.getItem(localStorage.key(i)) + '</a></li>' +
         '</ul>'
       } else if (localStorage.key(i).includes('events')) {
         body +=
-          '<h1>Events</h1>'
+          '<h1>Events</h1>' +
         '<ul data-role="listview" data-inset="true"> ' +
         '<li><a href="' + localStorage.key(i) + '" rel="external">' + localStorage.getItem(localStorage.key(i)) + '</a></li>' +
         '</ul>'
       } else if (localStorage.key(i).includes('stores')) {
         body +=
-          '<h1>Stores</h1>'
+          '<h1>Stores</h1>' +
         '<ul data-role="listview" data-inset="true"> ' +
         '<li><a href="' + localStorage.key(i) + '" rel="external">' + localStorage.getItem(localStorage.key(i)) + '</a></li>' +
         '</ul>'
