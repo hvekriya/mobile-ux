@@ -73,7 +73,7 @@ $('.sendEmail').click(function (event) {
   Email.send('w1497109@my.westminster.ac.uk',
     $('#email').val(),
     'Favourites List',
-    getMailBody() + $("html").html(),
+    $("html").html(),
     {token: 'bc296314-2062-48ef-ade3-e9cc38cad316'},
     function done (message) {
       $('.email').html('Email sent to:' + $('#email').val())
