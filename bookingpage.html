@@ -70,21 +70,24 @@
 					<label for="quantityAdult">Adult Quantity</label>
 					<label for="adultprice">£ <span id="adult_price">Price £5.00</span></label>
 					<input class="select-control" id="quantityAdult">
+					<p class="error-message-adult-qty" style="display:none"></p>
 
 					<label for="quantityChildren">Children Quantity</label>
 					<label for="childrenprice">£ <span id="children_price">Price £3.50</span></label>
 					<input class="select-control" id="quantityChildren">
+					<p class="error-message-child-qty" style="display:none"></p>
 
 					<label for="quantityOAP">OAP Quantity</label>
 					<label for="oapprice">£ <span id="oap_price">Price £2.50</span></label>
 					<input class="select-control" id="quantityOAP">
+					<p class="error-message-oap-qty" style="display:none"></p>
 
 					<div style="display: none" class="summary">
 						<div class="summmary">
 							<h3>Summary</h3>
-							<p>Adult Total: £<span class="adultTotal"></span></p>
-							<p>Children Total: £<span class="childrenTotal"></span></p>
-							<p>OAP Total: £<span class="oapTotal"></span></p>
+							<p>Adult Total: £<span class="adultTotal">0</span></p>
+							<p>Children Total: £<span class="childrenTotal">0</span></p>
+							<p>OAP Total: £<span class="oapTotal">0</span></p>
 							<p>Total: £<span class="total" id="total_value"></span></p>
 						</div>
 					</div>
@@ -92,7 +95,19 @@
 				</form>
 				<!--- Stripe Payment -->
 				<br>
-				<div align="center" id="thankyouPayment"> </div>
+				<!-- pop will open after email send -->
+				<div data-role="popup" id="booking-successful" class="photopopup" data-transition="pop" data-overlay-theme="a" data-corners="false"
+				 data-tolerance="30,15" style="padding: 15px;">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<h3>Successful!</h3>
+					<p>
+						<br>You successfully booked the event. 
+						<br>You will recieve an email in your inbox shortly with the reciept. Keep this
+						safe as it will be required at the event.
+						<br><br>Thank you for using Blurb.
+						<a class="ui-btn" href="events.html" rel="external">Back to events list</a>
+				</div>
+
 			</div>
 		</main>
 

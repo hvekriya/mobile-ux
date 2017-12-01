@@ -40,19 +40,36 @@ jQuery(function ($) {
     key: 'pk_test_6qm3EHfHRfeq8gHq3wfExSZD',
     token: function (token) {
       if (token.id) {
-        $('#thankyoupayment').html('You will recieve an email in your inbox shortly with the reciept. Keep this safe as it will be required at the event.')
+        $('#booking-successful').popup('open')
       }
     }
   })
 
   $('#customButton').on('click', function (e) {
-    handler.open({
-      name: $('#event_name').text(),
-      currency: 'gbp',
-      description: $('#event_description').text(),
-      amount: $('#total_value').text() * 100
-    })
-    e.preventDefault()
+    var adult = $('#quantityAdult').val()
+    var child = $('#quantityChildren').val()
+    var oap = $('#quantityOAP').val()
+    if (adult == '') {
+      $('.error-message-adult-qty').html('This field can not be left blank.').show()
+      e.preventDefault()
+    } else if (child == '') {
+      $('.error-message-child-qty').html('This field can not be left blank.').show()
+      e.preventDefault()
+    } else if (oap == '') {
+      $('.error-message-oap-qty').html('This field can not be left blank.').show()
+      e.preventDefault()
+    } else {
+      $('.error-message-adult-qty').html('This field can not be left blank.').hide()
+      $('.error-message-adult-qty').html('This field can not be left blank.').hide()
+      $('.error-message-adult-qty').html('This field can not be left blank.').hide()
+      handler.open({
+        name: $('#event_name').text(),
+        currency: 'gbp',
+        description: $('#event_description').text(),
+        amount: $('#total_value').text() * 100
+      })
+      e.preventDefault()
+    }
   })
 
   $(window).on('popstate', function () {

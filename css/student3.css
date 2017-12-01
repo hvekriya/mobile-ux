@@ -422,7 +422,7 @@ button.goback-btn.ui-btn {
   100% {
     transform: rotate(360deg); } }
 /* line 289, student3.scss */
-.error-message {
+.error-message, .error-message-adult-qty, .error-message-child-qty, .error-message-oap-qty {
   color: red; }
 
 /*# sourceMappingURL=student3.css.map */

@@ -286,6 +286,6 @@ button.goback-btn.ui-btn {
   100% { transform: rotate(360deg); }
 }
 
-.error-message {
+.error-message, .error-message-adult-qty, .error-message-child-qty, .error-message-oap-qty  {
     color: red;
 }
